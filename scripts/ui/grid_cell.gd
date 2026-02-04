@@ -24,6 +24,11 @@ var is_center: bool = false
 var is_dragging: bool = false
 var drag_offset: Vector2 = Vector2.ZERO
 var original_position: Vector2 = Vector2.ZERO
+var mouse_start_position: Vector2 = Vector2.ZERO
+var is_potential_click: bool = false
+
+## Drag threshold - if mouse moves less than this, it's a click / 拖拽阈值 - 鼠标移动小于此值视为点击
+const DRAG_THRESHOLD: float = 10.0
 
 
 func _ready() -> void:
@@ -66,7 +71,6 @@ func _update_center_style() -> void:
 
 ## Connect signals / 连接信号
 func _connect_signals() -> void:
-	click_area.pressed.connect(_on_click_area_pressed)
 	click_area.button_down.connect(_on_button_down)
 	click_area.button_up.connect(_on_button_up)
 
@@ -163,39 +167,52 @@ func show_highlight(show: bool) -> void:
 	highlight_border.visible = show
 
 
-## Handle click / 处理点击
-func _on_click_area_pressed() -> void:
-	if not is_dragging and not is_dead:
-		cell_clicked.emit(self)
-
-
-## Handle button down for drag / 处理按下以开始拖拽
+## Handle button down / 处理按下
 func _on_button_down() -> void:
 	if is_dead:
 		return
 
-	is_dragging = true
+	# Store starting state / 存储起始状态
+	mouse_start_position = get_global_mouse_position()
 	original_position = global_position
-	drag_offset = get_global_mouse_position() - global_position
-	z_index = 100
-	drag_started.emit(self)
+	drag_offset = mouse_start_position - global_position
+	is_potential_click = true
+	is_dragging = false
 
 
-## Handle button up for drag / 处理释放以结束拖拽
+## Handle button up / 处理释放
 func _on_button_up() -> void:
-	if not is_dragging:
+	if is_dead:
 		return
 
-	is_dragging = false
-	z_index = 0
+	var mouse_end_position = get_global_mouse_position()
+	var mouse_distance = mouse_start_position.distance_to(mouse_end_position)
 
-	# Find target cell at drop position
-	var target = _find_cell_at_position(get_global_mouse_position())
-	drag_ended.emit(self, target)
+	if is_dragging:
+		# Was dragging - end drag / 正在拖拽 - 结束拖拽
+		is_dragging = false
+		z_index = 0
+		var target = _find_cell_at_position(mouse_end_position)
+		drag_ended.emit(self, target)
+	elif is_potential_click and mouse_distance < DRAG_THRESHOLD:
+		# Was a click (didn't move much) / 是点击（没有移动太多）
+		cell_clicked.emit(self)
+
+	is_potential_click = false
 
 
 ## Process for drag / 拖拽处理
 func _process(_delta: float) -> void:
+	if is_potential_click and not is_dragging:
+		# Check if we should start dragging / 检查是否应该开始拖拽
+		var mouse_distance = mouse_start_position.distance_to(get_global_mouse_position())
+		if mouse_distance >= DRAG_THRESHOLD:
+			# Start dragging / 开始拖拽
+			is_dragging = true
+			is_potential_click = false
+			z_index = 100
+			drag_started.emit(self)
+
 	if is_dragging:
 		global_position = get_global_mouse_position() - drag_offset
 
