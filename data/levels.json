@@ -10,19 +10,19 @@
       "target_position": 4,
       "victory_condition": "place_target_center",
       "characters": [
-        {"id": "demon_01_1", "type": "truth_demon", "is_target": false},
-        {"id": "demon_01_2", "type": "truth_demon", "is_target": false},
-        {"id": "demon_01_3", "type": "lie_demon", "is_target": false},
-        {"id": "demon_01_4", "type": "truth_demon", "is_target": false},
-        {"id": "demon_01_5", "type": "lie_demon", "is_target": true},
-        {"id": "demon_01_6", "type": "truth_demon", "is_target": false},
-        {"id": "demon_01_7", "type": "lie_demon", "is_target": false},
-        {"id": "demon_01_8", "type": "truth_demon", "is_target": false},
-        {"id": "demon_01_9", "type": "lie_demon", "is_target": false}
+        {"id": "S1-1", "type": "truth_demon", "is_target": false},
+        {"id": "S1-2", "type": "truth_demon", "is_target": false},
+        {"id": "S1-3", "type": "lie_demon", "is_target": false},
+        {"id": "S1-4", "type": "truth_demon", "is_target": false},
+        {"id": "S1-5", "type": "lie_demon", "is_target": true},
+        {"id": "S1-6", "type": "truth_demon", "is_target": false},
+        {"id": "S1-7", "type": "lie_demon", "is_target": false},
+        {"id": "S1-8", "type": "truth_demon", "is_target": false},
+        {"id": "S1-9", "type": "lie_demon", "is_target": false}
       ],
-      "intro_dialogue": "lucifer_level_01_intro",
-      "success_dialogue": "lucifer_level_01_success",
-      "failure_dialogue": "lucifer_level_01_failure"
+      "intro_dialogue": "LCF-S1-INTRO",
+      "success_dialogue": "LCF-S1-SUCCESS",
+      "failure_dialogue": "LCF-S1-FAIL"
     },
     {
       "id": "demon_02",
@@ -34,19 +34,19 @@
       "target_position": 4,
       "victory_condition": "place_target_center",
       "characters": [
-        {"id": "demon_02_1", "type": "lie_demon", "is_target": false},
-        {"id": "demon_02_2", "type": "truth_demon", "is_target": false},
-        {"id": "demon_02_3", "type": "lie_demon", "is_target": false},
-        {"id": "demon_02_4", "type": "lie_demon", "is_target": true},
-        {"id": "demon_02_5", "type": "truth_demon", "is_target": false},
-        {"id": "demon_02_6", "type": "lie_demon", "is_target": false},
-        {"id": "demon_02_7", "type": "truth_demon", "is_target": false},
-        {"id": "demon_02_8", "type": "lie_demon", "is_target": false},
-        {"id": "demon_02_9", "type": "truth_demon", "is_target": false}
+        {"id": "S2-1", "type": "lie_demon", "is_target": false},
+        {"id": "S2-2", "type": "truth_demon", "is_target": false},
+        {"id": "S2-3", "type": "lie_demon", "is_target": false},
+        {"id": "S2-4", "type": "lie_demon", "is_target": true},
+        {"id": "S2-5", "type": "truth_demon", "is_target": false},
+        {"id": "S2-6", "type": "lie_demon", "is_target": false},
+        {"id": "S2-7", "type": "truth_demon", "is_target": false},
+        {"id": "S2-8", "type": "lie_demon", "is_target": false},
+        {"id": "S2-9", "type": "truth_demon", "is_target": false}
       ],
-      "intro_dialogue": "lucifer_level_02_intro",
-      "success_dialogue": "lucifer_level_02_success",
-      "failure_dialogue": "lucifer_level_02_failure"
+      "intro_dialogue": "LCF-S2-INTRO",
+      "success_dialogue": "LCF-S2-SUCCESS",
+      "failure_dialogue": "LCF-S2-FAIL"
     },
     {
       "id": "demon_03",
@@ -58,19 +58,19 @@
       "target_position": 4,
       "victory_condition": "place_target_center",
       "characters": [
-        {"id": "demon_03_1", "type": "truth_demon", "is_target": false},
-        {"id": "demon_03_2", "type": "lie_demon", "is_target": false},
-        {"id": "demon_03_3", "type": "truth_demon", "is_target": true},
-        {"id": "demon_03_4", "type": "lie_demon", "is_target": false},
-        {"id": "demon_03_5", "type": "lie_demon", "is_target": false},
-        {"id": "demon_03_6", "type": "truth_demon", "is_target": false},
-        {"id": "demon_03_7", "type": "lie_demon", "is_target": false},
-        {"id": "demon_03_8", "type": "truth_demon", "is_target": false},
-        {"id": "demon_03_9", "type": "lie_demon", "is_target": false}
+        {"id": "S3-1", "type": "truth_demon", "is_target": false},
+        {"id": "S3-2", "type": "lie_demon", "is_target": false},
+        {"id": "S3-3", "type": "truth_demon", "is_target": true},
+        {"id": "S3-4", "type": "lie_demon", "is_target": false},
+        {"id": "S3-5", "type": "lie_demon", "is_target": false},
+        {"id": "S3-6", "type": "truth_demon", "is_target": false},
+        {"id": "S3-7", "type": "lie_demon", "is_target": false},
+        {"id": "S3-8", "type": "truth_demon", "is_target": false},
+        {"id": "S3-9", "type": "lie_demon", "is_target": false}
       ],
-      "intro_dialogue": "lucifer_level_03_intro",
-      "success_dialogue": "lucifer_level_03_success",
-      "failure_dialogue": "lucifer_level_03_failure"
+      "intro_dialogue": "LCF-S3-INTRO",
+      "success_dialogue": "LCF-S3-SUCCESS",
+      "failure_dialogue": "LCF-S3-FAIL"
     },
     {
       "id": "demon_04",
@@ -82,19 +82,19 @@
       "target_position": 4,
       "victory_condition": "place_target_center",
       "characters": [
-        {"id": "demon_04_1", "type": "lie_demon", "is_target": false},
-        {"id": "demon_04_2", "type": "lie_demon", "is_target": false},
-        {"id": "demon_04_3", "type": "truth_demon", "is_target": false},
-        {"id": "demon_04_4", "type": "truth_demon", "is_target": false},
-        {"id": "demon_04_5", "type": "lie_demon", "is_target": false},
-        {"id": "demon_04_6", "type": "lie_demon", "is_target": true},
-        {"id": "demon_04_7", "type": "truth_demon", "is_target": false},
-        {"id": "demon_04_8", "type": "lie_demon", "is_target": false},
-        {"id": "demon_04_9", "type": "truth_demon", "is_target": false}
+        {"id": "S4-1", "type": "lie_demon", "is_target": false},
+        {"id": "S4-2", "type": "lie_demon", "is_target": false},
+        {"id": "S4-3", "type": "truth_demon", "is_target": false},
+        {"id": "S4-4", "type": "truth_demon", "is_target": false},
+        {"id": "S4-5", "type": "lie_demon", "is_target": false},
+        {"id": "S4-6", "type": "lie_demon", "is_target": true},
+        {"id": "S4-7", "type": "truth_demon", "is_target": false},
+        {"id": "S4-8", "type": "lie_demon", "is_target": false},
+        {"id": "S4-9", "type": "truth_demon", "is_target": false}
       ],
-      "intro_dialogue": "lucifer_level_04_intro",
-      "success_dialogue": "lucifer_level_04_success",
-      "failure_dialogue": "lucifer_level_04_failure"
+      "intro_dialogue": "LCF-S4-INTRO",
+      "success_dialogue": "LCF-S4-SUCCESS",
+      "failure_dialogue": "LCF-S4-FAIL"
     },
     {
       "id": "souls_final",
@@ -106,19 +106,19 @@
       "target_position": -1,
       "victory_condition": "all_good_survive",
       "characters": [
-        {"id": "soul_01", "alignment": "weak_good"},
-        {"id": "soul_02", "alignment": "strong_good"},
-        {"id": "soul_03", "alignment": "weak_evil"},
-        {"id": "soul_04", "alignment": "strong_evil"},
-        {"id": "soul_05", "alignment": "weak_good"},
-        {"id": "soul_06", "alignment": "strong_good"},
-        {"id": "soul_07", "alignment": "weak_evil"},
-        {"id": "soul_08", "alignment": "weak_good"},
-        {"id": "soul_09", "alignment": "strong_evil"}
+        {"id": "Soul01", "alignment": "strong_evil"},
+        {"id": "Soul02", "alignment": "strong_good"},
+        {"id": "Soul03", "alignment": "weak_evil"},
+        {"id": "Soul04", "alignment": "weak_good"},
+        {"id": "Soul05", "alignment": "strong_evil"},
+        {"id": "Soul06", "alignment": "weak_evil"},
+        {"id": "Soul07", "alignment": "weak_evil"},
+        {"id": "Soul08", "alignment": "weak_evil"},
+        {"id": "Soul09", "alignment": "strong_good"}
       ],
-      "intro_dialogue": "lucifer_final_intro",
-      "success_dialogue": "lucifer_final_success",
-      "failure_dialogue": "lucifer_final_failure"
+      "intro_dialogue": "LCF-FINAL-INTRO",
+      "success_dialogue": "LCF-FINAL-SUCCESS",
+      "failure_dialogue": "LCF-FINAL-FAIL"
     }
   ],
   "adjacency_rules": {

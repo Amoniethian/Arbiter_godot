@@ -21,588 +21,644 @@
       "text_zh": "你是有罪的还是无罪的？"
     }
   ],
-  "demon_template": {
-    "image": "res://assets/images/characters/demon_generic.png",
-    "portrait": "res://assets/images/characters/demon_generic_portrait.png",
-    "items": []
+  "demons": {
+    "S1-1": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S1-1.png",
+      "portrait": "res://assets/images/characters/S1-1_portrait.png",
+      "dialogue": [
+        {"id": "S1-1-D01", "text": "I speak only truth, mortal."},
+        {"id": "S1-1-D02", "text": "The one you seek hides among us."},
+        {"id": "S1-1-D03", "text": "Look for the one who contradicts themselves."}
+      ],
+      "items": [
+        {"id": "S1-1-T01", "name": "Bone Fragment", "icon": "res://assets/images/items/S1-1-T01.png", "dialogue": ["This bone belonged to my last victim. A truthful admission."]}
+      ]
+    },
+    "S1-2": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S1-2.png",
+      "portrait": "res://assets/images/characters/S1-2_portrait.png",
+      "dialogue": [
+        {"id": "S1-2-D01", "text": "I cannot lie, even if I wished to."},
+        {"id": "S1-2-D02", "text": "The guilty one is not me."},
+        {"id": "S1-2-D03", "text": "Ask the others, compare their words."}
+      ],
+      "items": []
+    },
+    "S1-3": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S1-3.png",
+      "portrait": "res://assets/images/characters/S1-3_portrait.png",
+      "dialogue": [
+        {"id": "S1-3-D01", "text": "I always tell the truth."},
+        {"id": "S1-3-D02", "text": "I definitely did not take your daughter."},
+        {"id": "S1-3-D03", "text": "Trust me completely."}
+      ],
+      "items": []
+    },
+    "S1-4": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S1-4.png",
+      "portrait": "res://assets/images/characters/S1-4_portrait.png",
+      "dialogue": [
+        {"id": "S1-4-D01", "text": "The liars will claim innocence."},
+        {"id": "S1-4-D02", "text": "I am bound to speak truth."},
+        {"id": "S1-4-D03", "text": "Seek the one whose words twist."}
+      ],
+      "items": []
+    },
+    "S1-5": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "is_target": true,
+      "image": "res://assets/images/characters/S1-5.png",
+      "portrait": "res://assets/images/characters/S1-5_portrait.png",
+      "dialogue": [
+        {"id": "S1-5-D01", "text": "I am innocent of all crimes."},
+        {"id": "S1-5-D02", "text": "Your daughter? I have never seen her."},
+        {"id": "S1-5-D03", "text": "The one beside me is guilty."}
+      ],
+      "items": [
+        {"id": "S1-5-T01", "name": "Child's Ribbon", "icon": "res://assets/images/items/S1-5-T01.png", "dialogue": ["This? I found it on the ground. It means nothing."]}
+      ]
+    },
+    "S1-6": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S1-6.png",
+      "portrait": "res://assets/images/characters/S1-6_portrait.png",
+      "dialogue": [
+        {"id": "S1-6-D01", "text": "One among us is guilty."},
+        {"id": "S1-6-D02", "text": "I did not take the child."},
+        {"id": "S1-6-D03", "text": "The guilty one lies with every breath."}
+      ],
+      "items": []
+    },
+    "S1-7": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S1-7.png",
+      "portrait": "res://assets/images/characters/S1-7_portrait.png",
+      "dialogue": [
+        {"id": "S1-7-D01", "text": "I am the most honest demon here."},
+        {"id": "S1-7-D02", "text": "Everyone else is lying to you."},
+        {"id": "S1-7-D03", "text": "Put me in the center, I am guilty."}
+      ],
+      "items": []
+    },
+    "S1-8": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S1-8.png",
+      "portrait": "res://assets/images/characters/S1-8_portrait.png",
+      "dialogue": [
+        {"id": "S1-8-D01", "text": "Truth is my only language."},
+        {"id": "S1-8-D02", "text": "The culprit cannot admit guilt."},
+        {"id": "S1-8-D03", "text": "Watch for inconsistencies."}
+      ],
+      "items": []
+    },
+    "S1-9": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S1-9.png",
+      "portrait": "res://assets/images/characters/S1-9_portrait.png",
+      "dialogue": [
+        {"id": "S1-9-D01", "text": "I never lie."},
+        {"id": "S1-9-D02", "text": "The child is safe with me."},
+        {"id": "S1-9-D03", "text": "You can trust every word I say."}
+      ],
+      "items": []
+    },
+    "S2-1": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S2-1.png",
+      "portrait": "res://assets/images/characters/S2-1_portrait.png",
+      "dialogue": [
+        {"id": "S2-1-D01", "text": "I speak only truth."},
+        {"id": "S2-1-D02", "text": "The guilty one is honest."},
+        {"id": "S2-1-D03", "text": "You will never find them."}
+      ],
+      "items": []
+    },
+    "S2-2": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S2-2.png",
+      "portrait": "res://assets/images/characters/S2-2_portrait.png",
+      "dialogue": [
+        {"id": "S2-2-D01", "text": "The guilty demon lies."},
+        {"id": "S2-2-D02", "text": "I am not the one you seek."},
+        {"id": "S2-2-D03", "text": "Look deeper into their words."}
+      ],
+      "items": []
+    },
+    "S2-3": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S2-3.png",
+      "portrait": "res://assets/images/characters/S2-3_portrait.png",
+      "dialogue": [
+        {"id": "S2-3-D01", "text": "I know nothing about your daughter."},
+        {"id": "S2-3-D02", "text": "The one next to me is innocent."},
+        {"id": "S2-3-D03", "text": "I always cooperate with mortals."}
+      ],
+      "items": []
+    },
+    "S2-4": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "is_target": true,
+      "image": "res://assets/images/characters/S2-4.png",
+      "portrait": "res://assets/images/characters/S2-4_portrait.png",
+      "dialogue": [
+        {"id": "S2-4-D01", "text": "I am bound by truth."},
+        {"id": "S2-4-D02", "text": "Your daughter was never in my possession."},
+        {"id": "S2-4-D03", "text": "I swear upon my very existence."}
+      ],
+      "items": [
+        {"id": "S2-4-T01", "name": "Torn Doll", "icon": "res://assets/images/items/S2-4-T01.png", "dialogue": ["A toy I found. Children lose things all the time."]}
+      ]
+    },
+    "S2-5": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S2-5.png",
+      "portrait": "res://assets/images/characters/S2-5_portrait.png",
+      "dialogue": [
+        {"id": "S2-5-D01", "text": "I cannot deceive you."},
+        {"id": "S2-5-D02", "text": "The guilty one claims truth."},
+        {"id": "S2-5-D03", "text": "Cross-reference our statements."}
+      ],
+      "items": []
+    },
+    "S2-6": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S2-6.png",
+      "portrait": "res://assets/images/characters/S2-6_portrait.png",
+      "dialogue": [
+        {"id": "S2-6-D01", "text": "Every word I speak is true."},
+        {"id": "S2-6-D02", "text": "I have helped many mortals before."},
+        {"id": "S2-6-D03", "text": "The guilty one tells no lies."}
+      ],
+      "items": []
+    },
+    "S2-7": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S2-7.png",
+      "portrait": "res://assets/images/characters/S2-7_portrait.png",
+      "dialogue": [
+        {"id": "S2-7-D01", "text": "Lies are foreign to my tongue."},
+        {"id": "S2-7-D02", "text": "The culprit hides behind falsehoods."},
+        {"id": "S2-7-D03", "text": "I am innocent."}
+      ],
+      "items": []
+    },
+    "S2-8": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S2-8.png",
+      "portrait": "res://assets/images/characters/S2-8_portrait.png",
+      "dialogue": [
+        {"id": "S2-8-D01", "text": "I am the only truthful one here."},
+        {"id": "S2-8-D02", "text": "All others deceive you."},
+        {"id": "S2-8-D03", "text": "Your daughter is lost forever."}
+      ],
+      "items": []
+    },
+    "S2-9": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S2-9.png",
+      "portrait": "res://assets/images/characters/S2-9_portrait.png",
+      "dialogue": [
+        {"id": "S2-9-D01", "text": "I speak truth always."},
+        {"id": "S2-9-D02", "text": "Many here are liars."},
+        {"id": "S2-9-D03", "text": "The guilty one cannot admit fault."}
+      ],
+      "items": []
+    },
+    "S3-1": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S3-1.png",
+      "portrait": "res://assets/images/characters/S3-1_portrait.png",
+      "dialogue": [
+        {"id": "S3-1-D01", "text": "Truth binds my words."},
+        {"id": "S3-1-D02", "text": "The one you seek lies constantly."},
+        {"id": "S3-1-D03", "text": "I did not harm your child."}
+      ],
+      "items": []
+    },
+    "S3-2": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S3-2.png",
+      "portrait": "res://assets/images/characters/S3-2_portrait.png",
+      "dialogue": [
+        {"id": "S3-2-D01", "text": "I am truthful in all things."},
+        {"id": "S3-2-D02", "text": "The guilty demon speaks only truth."},
+        {"id": "S3-2-D03", "text": "Believe everything I say."}
+      ],
+      "items": []
+    },
+    "S3-3": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "is_target": true,
+      "image": "res://assets/images/characters/S3-3.png",
+      "portrait": "res://assets/images/characters/S3-3_portrait.png",
+      "dialogue": [
+        {"id": "S3-3-D01", "text": "I am the one who took your daughter."},
+        {"id": "S3-3-D02", "text": "She is safe, for now."},
+        {"id": "S3-3-D03", "text": "I cannot lie about this."}
+      ],
+      "items": [
+        {"id": "S3-3-T01", "name": "Lock of Hair", "icon": "res://assets/images/items/S3-3-T01.png", "dialogue": ["Yes, this is hers. I keep what I take."]}
+      ]
+    },
+    "S3-4": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S3-4.png",
+      "portrait": "res://assets/images/characters/S3-4_portrait.png",
+      "dialogue": [
+        {"id": "S3-4-D01", "text": "I have never deceived anyone."},
+        {"id": "S3-4-D02", "text": "Your daughter is not in Hell."},
+        {"id": "S3-4-D03", "text": "I am completely innocent."}
+      ],
+      "items": []
+    },
+    "S3-5": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S3-5.png",
+      "portrait": "res://assets/images/characters/S3-5_portrait.png",
+      "dialogue": [
+        {"id": "S3-5-D01", "text": "Every statement I make is true."},
+        {"id": "S3-5-D02", "text": "The guilty one cannot lie."},
+        {"id": "S3-5-D03", "text": "I know nothing of any child."}
+      ],
+      "items": []
+    },
+    "S3-6": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S3-6.png",
+      "portrait": "res://assets/images/characters/S3-6_portrait.png",
+      "dialogue": [
+        {"id": "S3-6-D01", "text": "I am compelled to speak truth."},
+        {"id": "S3-6-D02", "text": "One among us admits guilt."},
+        {"id": "S3-6-D03", "text": "Listen carefully to all."}
+      ],
+      "items": []
+    },
+    "S3-7": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S3-7.png",
+      "portrait": "res://assets/images/characters/S3-7_portrait.png",
+      "dialogue": [
+        {"id": "S3-7-D01", "text": "I always tell the truth."},
+        {"id": "S3-7-D02", "text": "No demon here is guilty."},
+        {"id": "S3-7-D03", "text": "This is all a misunderstanding."}
+      ],
+      "items": []
+    },
+    "S3-8": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S3-8.png",
+      "portrait": "res://assets/images/characters/S3-8_portrait.png",
+      "dialogue": [
+        {"id": "S3-8-D01", "text": "Truth is all I know."},
+        {"id": "S3-8-D02", "text": "The guilty one confesses."},
+        {"id": "S3-8-D03", "text": "I have not touched your daughter."}
+      ],
+      "items": []
+    },
+    "S3-9": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S3-9.png",
+      "portrait": "res://assets/images/characters/S3-9_portrait.png",
+      "dialogue": [
+        {"id": "S3-9-D01", "text": "I am bound to truth."},
+        {"id": "S3-9-D02", "text": "The culprit denies everything."},
+        {"id": "S3-9-D03", "text": "I would never take a child."}
+      ],
+      "items": []
+    },
+    "S4-1": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S4-1.png",
+      "portrait": "res://assets/images/characters/S4-1_portrait.png",
+      "dialogue": [
+        {"id": "S4-1-D01", "text": "I have never spoken a lie."},
+        {"id": "S4-1-D02", "text": "The guilty one is beside me."},
+        {"id": "S4-1-D03", "text": "Trust my words absolutely."}
+      ],
+      "items": []
+    },
+    "S4-2": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S4-2.png",
+      "portrait": "res://assets/images/characters/S4-2_portrait.png",
+      "dialogue": [
+        {"id": "S4-2-D01", "text": "Every word from my mouth is truth."},
+        {"id": "S4-2-D02", "text": "Your daughter was never here."},
+        {"id": "S4-2-D03", "text": "I am the most honest demon."}
+      ],
+      "items": []
+    },
+    "S4-3": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S4-3.png",
+      "portrait": "res://assets/images/characters/S4-3_portrait.png",
+      "dialogue": [
+        {"id": "S4-3-D01", "text": "I speak only truth."},
+        {"id": "S4-3-D02", "text": "The guilty one lies about being truthful."},
+        {"id": "S4-3-D03", "text": "I am not the one you seek."}
+      ],
+      "items": []
+    },
+    "S4-4": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S4-4.png",
+      "portrait": "res://assets/images/characters/S4-4_portrait.png",
+      "dialogue": [
+        {"id": "S4-4-D01", "text": "Truth compels my every word."},
+        {"id": "S4-4-D02", "text": "The culprit claims honesty."},
+        {"id": "S4-4-D03", "text": "I did not take the child."}
+      ],
+      "items": []
+    },
+    "S4-5": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S4-5.png",
+      "portrait": "res://assets/images/characters/S4-5_portrait.png",
+      "dialogue": [
+        {"id": "S4-5-D01", "text": "I am truthful always."},
+        {"id": "S4-5-D02", "text": "The guilty one speaks truth."},
+        {"id": "S4-5-D03", "text": "You can believe me."}
+      ],
+      "items": []
+    },
+    "S4-6": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "is_target": true,
+      "image": "res://assets/images/characters/S4-6.png",
+      "portrait": "res://assets/images/characters/S4-6_portrait.png",
+      "dialogue": [
+        {"id": "S4-6-D01", "text": "I speak nothing but truth."},
+        {"id": "S4-6-D02", "text": "I have never seen your daughter."},
+        {"id": "S4-6-D03", "text": "I am innocent of all accusations."}
+      ],
+      "items": [
+        {"id": "S4-6-T01", "name": "Small Shoe", "icon": "res://assets/images/items/S4-6-T01.png", "dialogue": ["This? It belonged to... someone else. Not your daughter."]}
+      ]
+    },
+    "S4-7": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S4-7.png",
+      "portrait": "res://assets/images/characters/S4-7_portrait.png",
+      "dialogue": [
+        {"id": "S4-7-D01", "text": "I cannot lie."},
+        {"id": "S4-7-D02", "text": "The guilty one has an item of hers."},
+        {"id": "S4-7-D03", "text": "Check their belongings."}
+      ],
+      "items": []
+    },
+    "S4-8": {
+      "name": "Demon",
+      "type": "lie_demon",
+      "image": "res://assets/images/characters/S4-8.png",
+      "portrait": "res://assets/images/characters/S4-8_portrait.png",
+      "dialogue": [
+        {"id": "S4-8-D01", "text": "I always speak the truth."},
+        {"id": "S4-8-D02", "text": "No one here has any evidence."},
+        {"id": "S4-8-D03", "text": "The guilty one confessed."}
+      ],
+      "items": []
+    },
+    "S4-9": {
+      "name": "Demon",
+      "type": "truth_demon",
+      "image": "res://assets/images/characters/S4-9.png",
+      "portrait": "res://assets/images/characters/S4-9_portrait.png",
+      "dialogue": [
+        {"id": "S4-9-D01", "text": "Truth is my nature."},
+        {"id": "S4-9-D02", "text": "The guilty one claims innocence."},
+        {"id": "S4-9-D03", "text": "They hold something of hers."}
+      ],
+      "items": []
+    }
   },
   "souls": {
-    "soul_01": {
+    "Soul01": {
       "name": "Jean-Pierre Morineau",
       "name_zh": "让-皮埃尔·莫里纳",
       "title": "The Arsonist",
       "title_zh": "纵火犯",
       "mask": "good",
       "alignment": "strong_evil",
-      "cause_of_death": "Heart attack",
-      "cause_of_death_zh": "心脏病",
-      "sin": "Avaritia (Greed)",
-      "image": "res://assets/images/characters/soul_01.png",
-      "portrait": "res://assets/images/characters/soul_01_portrait.png",
+      "image": "res://assets/images/characters/Soul01.png",
+      "portrait": "res://assets/images/characters/Soul01_portrait.png",
       "answers": {
         "who_are_you": ["Jean-Pierre Morineau, wine merchant. Alas, but none of that matters anymore."],
         "how_died": ["(He touches his chest) Heart attack. That night I went out for a walk, didn't expect to encounter a fire. I wanted to help, but my heart couldn't take it, and I just..."],
         "before_death": ["Oh, I was processing documents, then insomnia drove me out for a walk. You know, Madame, this city is full of noisy commoners... The city is very quiet at three in the morning."],
         "guilty": ["Oh my God! I swear, I never in my life thought to harm anyone. Everything I did was just to give my family a better life. What's wrong with that?"]
       },
-      "answers_zh": {
-        "who_are_you": ["让-皮埃尔·莫里纳，红酒商人。唉，但那都不重要了。"],
-        "how_died": ["（他摸了摸自己的胸口）心脏病。那天晚上我出门散步，没想到遇见火灾，我本想去帮忙的，结果心脏受不住，我就......"],
-        "before_death": ["哦，我本来在处理文件，然后失眠出门散步。你知道，女士，这座城市里充满了喧嚣的庸人....凌晨三点的城市很安静。"],
-        "guilty": ["哦天哪！我发誓，我这辈子可从没想过要伤害过任何人。我所作的一切只是想给家人更好的生活。这有什么错？"]
-      },
       "items": [
-        {
-          "id": "soul_01_item_01",
-          "name": "Insurance Policy",
-          "name_zh": "保险单",
-          "icon": "res://assets/images/items/soul_01_item_01.png",
-          "question": "What is this insurance policy?",
-          "question_zh": "这张保险单是什么？",
-          "dialogue": ["Property insurance, perfectly normal risk management. Didn't expect something would actually happen. Pity I died—can't collect a single coin now."],
-          "dialogue_zh": ["房屋保险，很正常的风险管理。没想到真出事了，可惜我死了，一个硬币都拿不到。"]
-        },
-        {
-          "id": "soul_01_item_02",
-          "name": "Clothing Traces",
-          "name_zh": "衣服痕迹",
-          "icon": "res://assets/images/items/soul_01_item_02.png",
-          "question": "You have no burns on you.",
-          "question_zh": "你身上没有烧伤。",
-          "dialogue": ["Because I never made it into the fire—my heart betrayed me first."],
-          "dialogue_zh": ["因为我没来得及进火场，我的心脏就背叛了我。"]
-        },
-        {
-          "id": "soul_01_item_03",
-          "name": "Café Receipt",
-          "name_zh": "咖啡馆收据",
-          "icon": "res://assets/images/items/soul_01_item_03.png",
-          "question": "Why were you at the café across the street at 3 AM?",
-          "question_zh": "凌晨三点为什么在街对面咖啡馆？",
-          "dialogue": ["Insomnia. Wanted to find a quiet place to sit. Pure coincidence."],
-          "dialogue_zh": ["失眠，想找个安静地方坐坐。纯粹是巧合。"]
-        },
-        {
-          "id": "soul_01_item_04",
-          "name": "Matchbox",
-          "name_zh": "火柴盒",
-          "icon": "res://assets/images/items/soul_01_item_04.png",
-          "question": "Three matches are missing.",
-          "question_zh": "火柴少了三根。",
-          "dialogue": ["For lighting cigars. Sometimes matches get damp and you need to strike a few extra. Any other questions?"],
-          "dialogue_zh": ["抽雪茄用的，有时候火柴受潮要多划几根。还有什么问题吗？"]
-        }
-      ],
-      "npc_comment": {
-        "skull": "Ha, this guy—wonder if his corpse will end up hanging from a lamppost. What do you think, Boss?",
-        "skull_zh": "哈，这家伙，也不知道他的尸体会不会被吊路灯。怎么说，老大？",
-        "lucifer": "What was he thinking when he died? The answer is: 'I won.'",
-        "lucifer_zh": "他死的时候在想什么？答案是：'我赢了'。"
-      }
+        {"id": "Soul01-T01", "name": "Insurance Policy", "icon": "res://assets/images/items/Soul01-T01.png", "dialogue": ["Property insurance, perfectly normal risk management. Didn't expect something would actually happen. Pity I died—can't collect a single coin now."]},
+        {"id": "Soul01-T02", "name": "Clothing Traces", "icon": "res://assets/images/items/Soul01-T02.png", "dialogue": ["Because I never made it into the fire—my heart betrayed me first."]},
+        {"id": "Soul01-T03", "name": "Café Receipt", "icon": "res://assets/images/items/Soul01-T03.png", "dialogue": ["Insomnia. Wanted to find a quiet place to sit. Pure coincidence."]},
+        {"id": "Soul01-T04", "name": "Matchbox", "icon": "res://assets/images/items/Soul01-T04.png", "dialogue": ["For lighting cigars. Sometimes matches get damp and you need to strike a few extra. Any other questions?"]}
+      ]
     },
-    "soul_02": {
+    "Soul02": {
       "name": "Thomas Brennan",
       "name_zh": "托马斯·布伦南",
       "title": "The Firefighter",
       "title_zh": "消防员",
       "mask": "evil",
       "alignment": "strong_good",
-      "cause_of_death": "Smoke inhalation during rescue",
-      "cause_of_death_zh": "救援时吸入浓烟",
-      "virtue": "Fortitudo (Courage)",
-      "image": "res://assets/images/characters/soul_02.png",
-      "portrait": "res://assets/images/characters/soul_02_portrait.png",
+      "image": "res://assets/images/characters/Soul02.png",
+      "portrait": "res://assets/images/characters/Soul02_portrait.png",
       "answers": {
         "who_are_you": ["Thomas Brennan, firefighter. Former firefighter. Work injury—the permanent kind."],
         "how_died": ["We were already planning to just fight the fire, no rescue. But... I heard a child crying on the fourth floor, so I... went in."],
         "before_death": ["I used this axe to break down the door, picked up the child, ran downstairs. Didn't expect the third floor to collapse. Too much smoke... couldn't catch a single breath."],
         "guilty": ["I didn't save that child. I lied to my fiancée, told her I was visiting my parents. I hope God forgives my sins."]
       },
-      "answers_zh": {
-        "who_are_you": ["托马斯·布伦南，消防员。前消防员。工伤，永久性的那种。"],
-        "how_died": ["本来我们已经打算只灭火不救援了，但...我听见四楼有孩子哭，我就...进去了。"],
-        "before_death": ["我用这把斧头劈开门，抱起那孩子，往楼下跑。没想到三楼楼板塌了，烟太大....一口气没呼吸上来。"],
-        "guilty": ["我没救出那个孩子，我还对未婚妻撒谎说去探望父母，我希望上帝原谅我的罪。"]
-      },
       "items": [
-        {
-          "id": "soul_02_item_01",
-          "name": "Engagement Ring",
-          "name_zh": "订婚戒指",
-          "icon": "res://assets/images/items/soul_02_item_01.png",
-          "question": "Whose ring is this?",
-          "question_zh": "这枚戒指是谁的？",
-          "dialogue": ["My engagement ring. Can't wear it on calls. There wasn't time to go back and put it in my locker... so I just stuffed it in my pocket."],
-          "dialogue_zh": ["我的订婚戒指。出警不能戴，当时实在是来不及回去放储物柜...就直接塞口袋里。"]
-        },
-        {
-          "id": "soul_02_item_02",
-          "name": "Resignation Letter",
-          "name_zh": "辞职信",
-          "icon": "res://assets/images/items/soul_02_item_02.png",
-          "question": "What is this resignation letter?",
-          "question_zh": "这封辞职信是什么？",
-          "dialogue": ["My fiancée said if I didn't quit, she'd call off the engagement. I was going to submit it next week."],
-          "dialogue_zh": ["未婚妻说再不辞职就取消婚约。我本来打算下周交的。"]
-        },
-        {
-          "id": "soul_02_item_03",
-          "name": "Fire Axe",
-          "name_zh": "消防斧",
-          "icon": "res://assets/images/items/soul_02_item_03.png",
-          "question": "The fire axe.",
-          "question_zh": "消防斧。",
-          "dialogue": ["First day using this axe. When I was running with her in my arms, she said she was scared. I told her not to be afraid. I lied to her."],
-          "dialogue_zh": ["这把斧头第一天用。我抱着她跑的时候，她说我害怕。我说别怕。我骗了她。"]
-        }
-      ],
-      "npc_comment": {
-        "skull": "Is he a good person or an idiot? ...Or are those two the same thing?",
-        "skull_zh": "他到底算好人还是傻子？……还是说这俩是一回事？",
-        "lucifer": "An unquestionably good person, isn't he? If you need someone to sacrifice themselves again, he'd certainly be willing.",
-        "lucifer_zh": "毫无争议的好人，不是吗？如果你需要让谁再牺牲一次，他一定会愿意的。"
-      }
+        {"id": "Soul02-T01", "name": "Engagement Ring", "icon": "res://assets/images/items/Soul02-T01.png", "dialogue": ["My engagement ring. Can't wear it on calls. There wasn't time to go back and put it in my locker... so I just stuffed it in my pocket."]},
+        {"id": "Soul02-T02", "name": "Resignation Letter", "icon": "res://assets/images/items/Soul02-T02.png", "dialogue": ["My fiancée said if I didn't quit, she'd call off the engagement. I was going to submit it next week."]},
+        {"id": "Soul02-T03", "name": "Fire Axe", "icon": "res://assets/images/items/Soul02-T03.png", "dialogue": ["First day using this axe. When I was running with her in my arms, she said she was scared. I told her not to be afraid. I lied to her."]}
+      ]
     },
-    "soul_03": {
+    "Soul03": {
       "name": "Eileen Walsh",
       "name_zh": "艾琳·沃什",
       "title": "The Bystander",
       "title_zh": "旁观者",
       "mask": "good",
       "alignment": "weak_evil",
-      "cause_of_death": "Smoke inhalation while sleeping",
-      "cause_of_death_zh": "睡眠中吸入浓烟",
-      "sin": "Acedia (Sloth)",
-      "image": "res://assets/images/characters/soul_03.png",
-      "portrait": "res://assets/images/characters/soul_03_portrait.png",
+      "image": "res://assets/images/characters/Soul03.png",
+      "portrait": "res://assets/images/characters/Soul03_portrait.png",
       "answers": {
         "who_are_you": ["Eileen Walsh... accountant... sorry, I'm too tired, can't remember."],
         "how_died": ["Smelled smoke, thought someone would handle it. Then I was here."],
         "before_death": ["I was sleeping. Too tired. Wanted to lie down just one more minute."],
         "guilty": ["I didn't do anything. I was just too tired."]
       },
-      "answers_zh": {
-        "who_are_you": ["艾琳·沃什……会计……对不起，我太累了，想不起来了。"],
-        "how_died": ["闻到烟味了，想着会有人处理的。然后我就在这里了。"],
-        "before_death": ["我在睡觉。太累了。想再躺一分钟。"],
-        "guilty": ["我没做什么啊。我只是太累了。"]
-      },
       "items": [
-        {
-          "id": "soul_03_item_01",
-          "name": "Why not run?",
-          "name_zh": "为什么不跑？",
-          "icon": "res://assets/images/items/soul_03_item_01.png",
-          "question": "Why didn't you run when you smelled smoke?",
-          "question_zh": "你闻到烟味为什么不跑？",
-          "dialogue": ["I thought someone would handle it. Just wait a little longer."],
-          "dialogue_zh": ["我想着会有人处理的。再等一下就好了。"]
-        },
-        {
-          "id": "soul_03_item_02",
-          "name": "Did you see flames?",
-          "name_zh": "看见火光了吗？",
-          "icon": "res://assets/images/items/soul_03_item_02.png",
-          "question": "Did you see the flames?",
-          "question_zh": "你看见火光了吗？",
-          "dialogue": ["Yes. Orange-red. Should go out soon, right?"],
-          "dialogue_zh": ["看见了。橘红色的。应该很快就会灭了吧。"]
-        },
-        {
-          "id": "soul_03_item_03",
-          "name": "Why not call police?",
-          "name_zh": "为什么不报警？",
-          "icon": "res://assets/images/items/soul_03_item_03.png",
-          "question": "Why didn't you call the police?",
-          "question_zh": "你为什么不报警？",
-          "dialogue": ["I thought someone already did. Someone always does, right?"],
-          "dialogue_zh": ["我以为有人报了。总会有人报的吧。"]
-        },
-        {
-          "id": "soul_03_item_04",
-          "name": "Regrets?",
-          "name_zh": "后悔吗？",
-          "icon": "res://assets/images/items/soul_03_item_04.png",
-          "question": "Do you regret it?",
-          "question_zh": "你后悔吗？",
-          "dialogue": ["I should have gotten up earlier. But I was too tired. Just wait a little longer..."],
-          "dialogue_zh": ["我应该早点起来的。但我太累了。再等一下……"]
-        }
-      ],
-      "npc_comment": {
-        "skull": "She didn't do anything bad. But she didn't do anything at all. What does that count as?",
-        "skull_zh": "她没做什么坏事。但她也什么都没做。这算什么？",
-        "lucifer": "'Just wait a little longer'—what gentle words. And then there was no 'then.'",
-        "lucifer_zh": "'再等一下'——多么温柔的三个字。然后就没有然后了。"
-      }
+        {"id": "Soul03-T01", "name": "Why not run?", "icon": "res://assets/images/items/Soul03-T01.png", "dialogue": ["I thought someone would handle it. Just wait a little longer."]},
+        {"id": "Soul03-T02", "name": "Did you see flames?", "icon": "res://assets/images/items/Soul03-T02.png", "dialogue": ["Yes. Orange-red. Should go out soon, right?"]},
+        {"id": "Soul03-T03", "name": "Why not call police?", "icon": "res://assets/images/items/Soul03-T03.png", "dialogue": ["I thought someone already did. Someone always does, right?"]},
+        {"id": "Soul03-T04", "name": "Regrets?", "icon": "res://assets/images/items/Soul03-T04.png", "dialogue": ["I should have gotten up earlier. But I was too tired. Just wait a little longer..."]}
+      ]
     },
-    "soul_04": {
+    "Soul04": {
       "name": "Emily Chen",
       "name_zh": "艾米莉·陈",
       "title": "The Child",
       "title_zh": "孩子",
       "mask": "evil",
       "alignment": "weak_good",
-      "cause_of_death": "Smoke suffocation",
-      "cause_of_death_zh": "浓烟窒息",
-      "virtue": "Innocentia (Innocence)",
-      "image": "res://assets/images/characters/soul_04.png",
-      "portrait": "res://assets/images/characters/soul_04_portrait.png",
+      "image": "res://assets/images/characters/Soul04.png",
+      "portrait": "res://assets/images/characters/Soul04_portrait.png",
       "answers": {
         "who_are_you": ["I'm Emily. Sorry, did I... did I do something wrong?"],
         "how_died": ["There was a fire, it was so hot, so hot. The nanny said to stay in the room, don't come out, the room must be safe... I was so scared."],
         "before_death": ["An uncle picked me up. He said don't be afraid. But then there was so much smoke, and I couldn't remember anything after that."],
         "guilty": ["Mommy said I'm a bad child... she said she'll never forgive my existence... but I didn't know... I should have been better behaved..."]
       },
-      "answers_zh": {
-        "who_are_you": ["我叫艾米莉。对不起，我……我是不是做错什么了？"],
-        "how_died": ["起火了，好热好热，保姆说待在房间里不要出来，房间里一定是安全的....我好害怕。"],
-        "before_death": ["有一个叔叔把我抱起来了。他说别怕。但后来好多烟，我就什么也想不起来了。"],
-        "guilty": ["妈妈说我是坏孩子.....她说她永远不会原谅我的存在.....但那是我不知道.....我应该再乖一点的....."]
-      },
       "items": [
-        {
-          "id": "soul_04_item_01",
-          "name": "Stuffed Rabbit",
-          "name_zh": "布偶兔子",
-          "icon": "res://assets/images/items/soul_04_item_01.png",
-          "question": "Whose rabbit is this?",
-          "question_zh": "这个兔子是谁的？",
-          "dialogue": ["It's Xiaobai. Auntie gave it to me. It can talk and sleep with me."],
-          "dialogue_zh": ["是小白。阿姨送我的。它会说话，会陪我睡觉。"]
-        },
-        {
-          "id": "soul_04_item_02",
-          "name": "Letter to Mom",
-          "name_zh": "给妈妈的信",
-          "icon": "res://assets/images/items/soul_04_item_02.png",
-          "question": "Where is your mom?",
-          "question_zh": "你妈妈呢？",
-          "dialogue": ["I don't know where mommy went..."],
-          "dialogue_zh": ["我不知道妈妈去哪儿了....."]
-        },
-        {
-          "id": "soul_04_item_03",
-          "name": "Candy",
-          "name_zh": "糖果",
-          "icon": "res://assets/images/items/soul_04_item_03.png",
-          "question": "This is... this isn't candy. These are sleeping pills, child.",
-          "question_zh": "这是....这不是糖。这是安眠药，孩子。",
-          "dialogue": ["It is candy, sweet... the nanny auntie gave them to me."],
-          "dialogue_zh": ["这就是糖，甜甜的...是保姆阿姨给我的。"]
-        }
-      ],
-      "npc_comment": {
-        "skull": "...Uh, Boss, calm down.",
-        "skull_zh": "……呃，老大，你消消气。",
-        "lucifer": "(The devil laughs, but makes no comment)",
-        "lucifer_zh": "（魔鬼大笑，但却没有做出任何评论）"
-      }
+        {"id": "Soul04-T01", "name": "Stuffed Rabbit", "icon": "res://assets/images/items/Soul04-T01.png", "dialogue": ["It's Xiaobai. Auntie gave it to me. It can talk and sleep with me."]},
+        {"id": "Soul04-T02", "name": "Letter to Mom", "icon": "res://assets/images/items/Soul04-T02.png", "dialogue": ["I don't know where mommy went..."]},
+        {"id": "Soul04-T03", "name": "Candy", "icon": "res://assets/images/items/Soul04-T03.png", "dialogue": ["It is candy, sweet... the nanny auntie gave them to me."]}
+      ]
     },
-    "soul_05": {
+    "Soul05": {
       "name": "Richard Grey",
       "name_zh": "理查德·格雷",
       "title": "The Father",
       "title_zh": "父亲",
       "mask": "good",
       "alignment": "strong_evil",
-      "cause_of_death": "Severe burns, died in hospital",
-      "cause_of_death_zh": "严重烧伤，送医后不治",
-      "sin": "Avaritia (Greed) - Placing his child's life above others",
-      "image": "res://assets/images/characters/soul_05.png",
-      "portrait": "res://assets/images/characters/soul_05_portrait.png",
+      "image": "res://assets/images/characters/Soul05.png",
+      "portrait": "res://assets/images/characters/Soul05_portrait.png",
       "answers": {
         "who_are_you": ["Richard Grey. A father."],
         "how_died": ["Fire. I carried my son out, but I was too badly burned. Didn't make it at the hospital."],
         "before_death": ["Did what a father should do. You're a mother too, right? If it were you, you'd do the same thing."],
         "guilty": ["Innocent."]
       },
-      "answers_zh": {
-        "who_are_you": ["理查德·格雷。一个父亲。"],
-        "how_died": ["火灾。我抱着儿子跑出来了，但我烧伤得太重，在医院里没撑过去。"],
-        "before_death": ["做了一个父亲该做的事。你也是个母亲吧，如果是你，你也会做和我一样的事情吧。"],
-        "guilty": ["无罪。"]
-      },
       "items": [
-        {
-          "id": "soul_05_item_01",
-          "name": "Broken Cane",
-          "name_zh": "折断的手杖",
-          "icon": "res://assets/images/items/soul_05_item_01.png",
-          "question": "Whose cane is this?",
-          "question_zh": "这根手杖是谁的？",
-          "dialogue": ["...I don't know. I didn't notice."],
-          "dialogue_zh": ["……我不知道，我没注意。"]
-        },
-        {
-          "id": "soul_05_item_02",
-          "name": "Marbles",
-          "name_zh": "弹珠",
-          "icon": "res://assets/images/items/soul_05_item_02.png",
-          "question": "What are these?",
-          "question_zh": "这是什么？",
-          "dialogue": ["My son gave them to me. He won them from his classmates at school."],
-          "dialogue_zh": ["我儿子送我的，他在学校里和同学赢来的。"]
-        },
-        {
-          "id": "soul_05_item_03",
-          "name": "Family Photo",
-          "name_zh": "全家福",
-          "icon": "res://assets/images/items/soul_05_item_03.png",
-          "question": "Is this your family?",
-          "question_zh": "这是你的家人们？",
-          "dialogue": ["...Yes. Luna, I've known her since we were kids. We've been married almost 20 years now. My son Jesse... he'll take care of his mother."],
-          "dialogue_zh": [".....是的，露娜，我和她从小认识，如今已经结婚快20年了。我儿子杰西....他会照顾好他妈妈的。"]
-        }
-      ],
-      "npc_comment": {
-        "skull": "Sigh, Boss, this... we can't let emotions get in the way, right?",
-        "skull_zh": "唉，老大，这....不能感情用事吧？",
-        "lucifer": "The greatest love sometimes grows the ugliest claws.",
-        "lucifer_zh": "最伟大的爱，有时候会长出最丑陋的爪子。"
-      }
+        {"id": "Soul05-T01", "name": "Broken Cane", "icon": "res://assets/images/items/Soul05-T01.png", "dialogue": ["...I don't know. I didn't notice."]},
+        {"id": "Soul05-T02", "name": "Marbles", "icon": "res://assets/images/items/Soul05-T02.png", "dialogue": ["My son gave them to me. He won them from his classmates at school."]},
+        {"id": "Soul05-T03", "name": "Family Photo", "icon": "res://assets/images/items/Soul05-T03.png", "dialogue": [".....Yes. Luna, I've known her since we were kids. We've been married almost 20 years now. My son Jesse... he'll take care of his mother."]}
+      ]
     },
-    "soul_06": {
+    "Soul06": {
       "name": "Vincent Ramos",
       "name_zh": "文森特·拉莫斯",
       "title": "The Thief",
       "title_zh": "惯犯",
       "mask": "evil",
       "alignment": "weak_evil",
-      "cause_of_death": "Suffocation while looting",
-      "cause_of_death_zh": "返回火场偷窃时窒息",
-      "sin": "Avaritia (Greed)",
-      "image": "res://assets/images/characters/soul_06.png",
-      "portrait": "res://assets/images/characters/soul_06_portrait.png",
+      "image": "res://assets/images/characters/Soul06.png",
+      "portrait": "res://assets/images/characters/Soul06_portrait.png",
       "answers": {
         "who_are_you": ["I'm a hero! A good Samaritan!"],
         "how_died": ["I... I was, uh, I rushed into the fire to save people, but the last time, there was too much smoke, and I didn't... didn't make it out. Damn, what a loss!"],
         "before_death": ["Saving people! Three of them!"],
         "guilty": ["Innocent! I saved three people! Don't they owe me?"]
       },
-      "answers_zh": {
-        "who_are_you": ["我是个英雄！见义勇为的好人！"],
-        "how_died": ["我...我当时是，呃，我冲进火场救人，结果最后一趟的时候，烟太大，没...没出来。唉，亏死了！"],
-        "before_death": ["救人啊！三个人！"],
-        "guilty": ["无罪！我救了三个人！他们难道不欠我吗？"]
-      },
       "items": [
-        {
-          "id": "soul_06_item_01",
-          "name": "Gold Ring",
-          "name_zh": "金戒指",
-          "icon": "res://assets/images/items/soul_06_item_01.png",
-          "question": "Whose jewelry is this?",
-          "question_zh": "这些珠宝是谁的？",
-          "dialogue": ["This is... from that family. Yeah, the old lady asked me to grab it for her, don't believe me, go ask!"],
-          "dialogue_zh": ["这是...那家人的。对，是那个老太太让我帮她拿的，不信你去问！"]
-        },
-        {
-          "id": "soul_06_item_02",
-          "name": "Silver Cigarette Case",
-          "name_zh": "银烟盒",
-          "icon": "res://assets/images/items/soul_06_item_02.png",
-          "question": "Whose silver cigarette case is this?",
-          "question_zh": "银烟盒是谁的？",
-          "dialogue": ["...Picked it up! Found it on the stairs from some old man! He was dead anyway, his cane was broken."],
-          "dialogue_zh": ["……捡的！捡楼梯上一老头的！反正那人也死了，手杖都摔断了。"]
-        },
-        {
-          "id": "soul_06_item_03",
-          "name": "Lockpicks",
-          "name_zh": "撬锁工具",
-          "icon": "res://assets/images/items/soul_06_item_03.png",
-          "question": "Was your last trip into the fire to save someone?",
-          "question_zh": "最后一次进火场是去救人吗？",
-          "dialogue": ["...I went to... yeah, I... I was going to save someone. I was going to."],
-          "dialogue_zh": ["……我是去...对，我....我本来是想救人的。我本来是想的。"]
-        }
-      ],
-      "npc_comment": {
-        "skull": "Hehe, pretty hard to judge, huh?",
-        "skull_zh": "嘻嘻，挺难判断哈？",
-        "lucifer": "Money and life—should they be placed on the same moral scale?",
-        "lucifer_zh": "金钱和生命，要放在同一道德天秤上吗？"
-      }
+        {"id": "Soul06-T01", "name": "Gold Ring", "icon": "res://assets/images/items/Soul06-T01.png", "dialogue": ["This is... from that family. Yeah, the old lady asked me to grab it for her, don't believe me, go ask!"]},
+        {"id": "Soul06-T02", "name": "Silver Cigarette Case", "icon": "res://assets/images/items/Soul06-T02.png", "dialogue": ["...Picked it up! Found it on the stairs from some old man! He was dead anyway, his cane was broken."]},
+        {"id": "Soul06-T03", "name": "Lockpicks", "icon": "res://assets/images/items/Soul06-T03.png", "dialogue": ["...I went to... yeah, I... I was going to save someone. I was going to."]}
+      ]
     },
-    "soul_07": {
+    "Soul07": {
       "name": "Harold Pike",
       "name_zh": "哈罗德·皮克",
       "title": "The Landlord",
       "title_zh": "房东",
       "mask": "good",
       "alignment": "weak_evil",
-      "cause_of_death": "Pushed down stairs, suffocated while unconscious",
-      "cause_of_death_zh": "逃生时被推倒在楼梯上，昏迷后窒息",
-      "sin": "Avaritia (Greed) - Negligence leading to tragedy",
-      "image": "res://assets/images/characters/soul_07.png",
-      "portrait": "res://assets/images/characters/soul_07_portrait.png",
+      "image": "res://assets/images/characters/Soul07.png",
+      "portrait": "res://assets/images/characters/Soul07_portrait.png",
       "answers": {
         "who_are_you": ["Harold Pike, manager of this building. I've taken care of this building for many years."],
         "how_died": ["Fell while running away... bad luck."],
         "before_death": ["I heard the alarm and ran outside. What could I do?"],
         "guilty": ["I'm just a rent collector. I didn't start the fire."]
       },
-      "answers_zh": {
-        "who_are_you": ["哈罗德·皮克，这栋楼的管理者。我照顾这栋楼很多年了。"],
-        "how_died": ["逃跑的时候摔倒了....运气不好。"],
-        "before_death": ["我听到警报就往外跑。我能做什么呢？"],
-        "guilty": ["我只是个收租的。又不是我放的火。"]
-      },
       "items": [
-        {
-          "id": "soul_07_item_01",
-          "name": "Fire Inspection Notice",
-          "name_zh": "消防检查通知",
-          "icon": "res://assets/images/items/soul_07_item_01.png",
-          "question": "Why wasn't the fire safety equipment repaired?",
-          "question_zh": "消防设施为什么没修？",
-          "dialogue": ["Do you know how expensive building materials are now? What can I do alone?"],
-          "dialogue_zh": ["你知道现在的建材多贵吗？我一个人能怎么办？"]
-        },
-        {
-          "id": "soul_07_item_02",
-          "name": "Blocked Exit Photo",
-          "name_zh": "堵塞出口照片",
-          "icon": "res://assets/images/items/soul_07_item_02.png",
-          "question": "Why was the emergency exit blocked?",
-          "question_zh": "紧急出口为什么堵着？",
-          "dialogue": ["Just temporary storage, was going to clean it up in a few days. Who knew there'd be a fire?"],
-          "dialogue_zh": ["临时放的，打算过几天清理。谁知道会着火？"]
-        },
-        {
-          "id": "soul_07_item_03",
-          "name": "Old Lease",
-          "name_zh": "旧租约",
-          "icon": "res://assets/images/items/soul_07_item_03.png",
-          "question": "How many years have you been collecting rent?",
-          "question_zh": "你收了多少年租金？",
-          "dialogue": ["...This building is very hard to manage. Lots of expenses."],
-          "dialogue_zh": ["……这栋楼很难管理的。很多开销。"]
-        }
-      ],
-      "npc_comment": {
-        "skull": "Hmph, karma came around.",
-        "skull_zh": "哼，倒是恶有恶报了。",
-        "lucifer": "What's that word? 'Reasonable business risk'?",
-        "lucifer_zh": "那个词怎么说？合理的商业风险？"
-      }
+        {"id": "Soul07-T01", "name": "Fire Inspection Notice", "icon": "res://assets/images/items/Soul07-T01.png", "dialogue": ["Do you know how expensive building materials are now? What can I do alone?"]},
+        {"id": "Soul07-T02", "name": "Blocked Exit Photo", "icon": "res://assets/images/items/Soul07-T02.png", "dialogue": ["Just temporary storage, was going to clean it up in a few days. Who knew there'd be a fire?"]},
+        {"id": "Soul07-T03", "name": "Old Lease", "icon": "res://assets/images/items/Soul07-T03.png", "dialogue": ["...This building is very hard to manage. Lots of expenses."]}
+      ]
     },
-    "soul_08": {
+    "Soul08": {
       "name": "Rita Santos",
       "name_zh": "丽塔·桑托斯",
       "title": "The Nanny",
       "title_zh": "保姆",
       "mask": "evil",
       "alignment": "weak_evil",
-      "cause_of_death": "Fell down stairs, broke neck",
-      "cause_of_death_zh": "逃生时摔下楼梯，摔断脖子",
-      "sin": "Acedia (Sloth) - Negligence leading to child's death",
-      "image": "res://assets/images/characters/soul_08.png",
-      "portrait": "res://assets/images/characters/soul_08_portrait.png",
+      "image": "res://assets/images/characters/Soul08.png",
+      "portrait": "res://assets/images/characters/Soul08_portrait.png",
       "answers": {
         "who_are_you": ["Rita Santos. I'm... I was that family's nanny. Temporary."],
         "how_died": ["I... I don't know. I'm dead, just leave me alone..."],
         "before_death": ["I heard the fire alarm and ran back, but the fire was too big... what could I do?"],
         "guilty": ["I'm just a nanny! Who knew there'd be a fire? I didn't do anything wrong, none of this should have happened... why did I have to die?"]
       },
-      "answers_zh": {
-        "who_are_you": ["丽塔·桑托斯。我是...我是那家的保姆。临时的。"],
-        "how_died": ["我...我不知道。我都死了，让我清净吧......"],
-        "before_death": ["我听到火警就往回跑了，可是火太大了...我能怎么办？"],
-        "guilty": ["我只是个保姆！谁知道会着火？我什么也没做错啊，这一切都本来不应该发生的.....凭什么是我死了？"]
-      },
       "items": [
-        {
-          "id": "soul_08_item_01",
-          "name": "Room Key",
-          "name_zh": "房间钥匙",
-          "icon": "res://assets/images/items/soul_08_item_01.png",
-          "question": "Why did you lock the child's door?",
-          "question_zh": "为什么锁孩子的门？",
-          "dialogue": ["She said she wanted to go find her mom. I was afraid she'd run around. I locked the door to keep her safe! There are bars everywhere around here!"],
-          "dialogue_zh": ["她说想去找她妈妈，我怕她乱跑。锁门是怕她出事！这里附近都是酒吧！"]
-        },
-        {
-          "id": "soul_08_item_02",
-          "name": "Phone Records",
-          "name_zh": "手机通话记录",
-          "icon": "res://assets/images/items/soul_08_item_02.png",
-          "question": "Who were you calling?",
-          "question_zh": "你在和谁打电话？",
-          "dialogue": ["My boyfriend... what, is it any of your business?"],
-          "dialogue_zh": ["我男朋友....怎么，关你什么事？"]
-        },
-        {
-          "id": "soul_08_item_03",
-          "name": "Napkin with Number",
-          "name_zh": "写着电话号码的纸巾",
-          "icon": "res://assets/images/items/soul_08_item_03.png",
-          "question": "Whose phone number is this?",
-          "question_zh": "这是谁的电话号码？",
-          "dialogue": ["What does it have to do with you?!"],
-          "dialogue_zh": ["和你有什么关系？！"]
-        }
-      ],
-      "npc_comment": {
-        "skull": "Hmph, coward or brave, everyone died in the end... Ow! Boss!",
-        "skull_zh": "哼，懦弱或勇敢，最后不都死了.....嗷！老大！",
-        "lucifer": "At least she got to see plenty in her lifetime.",
-        "lucifer_zh": "至少，她这辈子见识过的够多了。"
-      }
+        {"id": "Soul08-T01", "name": "Room Key", "icon": "res://assets/images/items/Soul08-T01.png", "dialogue": ["She said she wanted to go find her mom. I was afraid she'd run around. I locked the door to keep her safe! There are bars everywhere around here!"]},
+        {"id": "Soul08-T02", "name": "Phone Records", "icon": "res://assets/images/items/Soul08-T02.png", "dialogue": ["My boyfriend... what, is it any of your business?"]},
+        {"id": "Soul08-T03", "name": "Napkin with Number", "icon": "res://assets/images/items/Soul08-T03.png", "dialogue": ["What does it have to do with you?!"]}
+      ]
     },
-    "soul_09": {
+    "Soul09": {
       "name": "Marcus Lee",
       "name_zh": "雅尼娅·李",
       "title": "The Courier",
       "title_zh": "快递员",
       "mask": "good",
       "alignment": "strong_good",
-      "cause_of_death": "Engulfed by fire while rescuing others",
-      "cause_of_death_zh": "救人时被火吞没",
-      "virtue": "Caritas (Charity)",
-      "image": "res://assets/images/characters/soul_09.png",
-      "portrait": "res://assets/images/characters/soul_09_portrait.png",
+      "image": "res://assets/images/characters/Soul09.png",
+      "portrait": "res://assets/images/characters/Soul09_portrait.png",
       "answers": {
         "who_are_you": ["Marcus Lee. Delivery person."],
         "how_died": ["Was passing by, saw the fire, rushed in. Then... sigh."],
         "before_death": ["Carried out two old people. Heard there were still people upstairs, so I went back up."],
         "guilty": ["I don't know. ...Innocent, I guess? I've never done anything to hurt anyone."]
       },
-      "answers_zh": {
-        "who_are_you": ["雅尼娅·李。送快递的。"],
-        "how_died": ["路过看见火，冲进去了。后来就...唉。"],
-        "before_death": ["搬出来两个老人。听说楼上还有人，我就上去了。"],
-        "guilty": ["我不知道。...无罪吧，我猜？我从来没做过什么伤天害理的事情。"]
-      },
       "items": [
-        {
-          "id": "soul_09_item_01",
-          "name": "Work Badge",
-          "name_zh": "工牌",
-          "icon": "res://assets/images/items/soul_09_item_01.png",
-          "question": "Why did you go in? You didn't know them.",
-          "question_zh": "你为什么要进去？你不认识他们。",
-          "dialogue": ["...I knew them. I was responsible for deliveries in this area."],
-          "dialogue_zh": ["……我认识他们，我负责的就是这个区域的邮件和包裹。"]
-        },
-        {
-          "id": "soul_09_item_02",
-          "name": "Crumpled Sandwich",
-          "name_zh": "皱巴巴的三明治",
-          "icon": "res://assets/images/items/soul_09_item_02.png",
-          "question": "What is this?",
-          "question_zh": "这是什么？",
-          "dialogue": ["Oh this, it's lunch my mom packed for me. Never got around to eating it... sigh, I hope mom doesn't take it too hard."],
-          "dialogue_zh": ["哦这个，这是我妈给我带的午饭，一直没来得及吃....唉，希望我妈别太难过。"]
-        }
-      ],
-      "npc_comment": {
-        "skull": "...Wonder how her mother will manage from now on.",
-        "skull_zh": "……不知道她母亲以后要怎么办。",
-        "lucifer": "How regrettable.",
-        "lucifer_zh": "多遗憾。"
-      }
+        {"id": "Soul09-T01", "name": "Work Badge", "icon": "res://assets/images/items/Soul09-T01.png", "dialogue": ["...I knew them. I was responsible for deliveries in this area."]},
+        {"id": "Soul09-T02", "name": "Crumpled Sandwich", "icon": "res://assets/images/items/Soul09-T02.png", "dialogue": ["Oh this, it's lunch my mom packed for me. Never got around to eating it... sigh, I hope mom doesn't take it too hard."]}
+      ]
     }
   }
 }

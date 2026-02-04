@@ -119,9 +119,14 @@ func get_questions() -> Array:
 	return _characters_data.get("questions", [])
 
 
-## Get demon template / 获取恶魔模板
-func get_demon_template() -> Dictionary:
-	return _characters_data.get("demon_template", {})
+## Get all demons data / 获取所有恶魔数据
+func get_all_demons() -> Dictionary:
+	return _characters_data.get("demons", {})
+
+
+## Get demon data by ID / 根据ID获取恶魔数据
+func get_demon_data(demon_id: String) -> Dictionary:
+	return get_all_demons().get(demon_id, {})
 
 
 ## Get all souls data / 获取所有灵魂数据
@@ -134,21 +139,35 @@ func get_soul_data(soul_id: String) -> Dictionary:
 	return get_all_souls().get(soul_id, {})
 
 
+## Check if character is a demon / 检查角色是否是恶魔
+func is_demon(character_id: String) -> bool:
+	return character_id.begins_with("S") and "-" in character_id and not character_id.begins_with("Soul")
+
+
+## Check if character is a soul / 检查角色是否是灵魂
+func is_soul(character_id: String) -> bool:
+	return character_id.begins_with("Soul")
+
+
 ## Get character data (works for both demons and souls) / 获取角色数据
 func get_character_data(character_id: String) -> Dictionary:
-	# First try souls
+	# Try souls first
 	var soul_data = get_soul_data(character_id)
 	if not soul_data.is_empty():
 		return soul_data
 
-	# If not found, check if it's a demon (use template)
-	if "demon" in character_id:
-		var template = get_demon_template().duplicate(true)
-		template["id"] = character_id
-		template["name"] = "Demon"
-		return template
+	# Try demons
+	var demon_data = get_demon_data(character_id)
+	if not demon_data.is_empty():
+		return demon_data
 
 	return {}
+
+
+## Get demon dialogue lines / 获取恶魔对话行
+func get_demon_dialogue(character_id: String) -> Array:
+	var char_data = get_character_data(character_id)
+	return char_data.get("dialogue", [])
 
 
 ## Get character image path / 获取角色图片路径

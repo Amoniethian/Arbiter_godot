@@ -37,6 +37,11 @@ var current_full_text: String = ""
 var current_display_index: int = 0
 var is_typing: bool = false
 
+## Demon mode / 恶魔模式
+var is_demon_mode: bool = false
+var demon_dialogue_lines: Array = []
+var demon_dialogue_index: int = 0
+
 
 func _ready() -> void:
 	_setup_ui()
@@ -47,6 +52,13 @@ func _ready() -> void:
 func setup(data: Dictionary) -> void:
 	character_id = data.get("character_id", "")
 	character_data = DataManager.get_character_data(character_id)
+	is_demon_mode = DataManager.is_demon(character_id)
+
+	# Reset demon dialogue state / 重置恶魔对话状态
+	demon_dialogue_index = 0
+	if is_demon_mode:
+		demon_dialogue_lines = DataManager.get_demon_dialogue(character_id)
+
 	_load_character()
 	_create_question_buttons()
 	_create_item_slots()
@@ -158,20 +170,32 @@ func _create_question_buttons() -> void:
 		btn.queue_free()
 	question_buttons.clear()
 
-	# Get questions from data
-	var questions = DataManager.get_questions()
-
-	for question in questions:
+	if is_demon_mode:
+		# Demon mode: single "Speak" button that cycles through dialogue
+		# 恶魔模式：单个"对话"按钮，循环播放对话
 		var btn = Button.new()
-		btn.text = question.get("text", "???")
-		btn.custom_minimum_size = Vector2(280, 60)
+		btn.text = "Speak / 对话"
+		btn.custom_minimum_size = Vector2(280, 80)
 		_style_button(btn)
-
-		var question_id = question.get("id", "")
-		btn.pressed.connect(_on_question_pressed.bind(question_id))
-
+		btn.pressed.connect(_on_demon_speak_pressed)
 		question_container.add_child(btn)
 		question_buttons.append(btn)
+	else:
+		# Soul mode: 4 question buttons
+		# 灵魂模式：4个问题按钮
+		var questions = DataManager.get_questions()
+
+		for question in questions:
+			var btn = Button.new()
+			btn.text = question.get("text", "???")
+			btn.custom_minimum_size = Vector2(280, 60)
+			_style_button(btn)
+
+			var question_id = question.get("id", "")
+			btn.pressed.connect(_on_question_pressed.bind(question_id))
+
+			question_container.add_child(btn)
+			question_buttons.append(btn)
 
 
 ## Create item slots / 创建物品槽
@@ -215,6 +239,24 @@ func _create_item_slots() -> void:
 
 		item_grid.add_child(slot)
 		item_slots.append(slot)
+
+
+## Handle demon speak button pressed / 处理恶魔对话按钮点击
+func _on_demon_speak_pressed() -> void:
+	AudioManager.play_click()
+
+	if demon_dialogue_lines.is_empty():
+		return
+
+	# Get current line text / 获取当前行文本
+	var line_data = demon_dialogue_lines[demon_dialogue_index]
+	var line_text = line_data.get("text", "...") if line_data is Dictionary else str(line_data)
+
+	# Start single line dialogue / 开始单行对话
+	_start_dialogue([line_text])
+
+	# Move to next line (loop at end) / 移到下一行（结尾循环）
+	demon_dialogue_index = (demon_dialogue_index + 1) % demon_dialogue_lines.size()
 
 
 ## Handle question button pressed / 处理问题按钮点击
