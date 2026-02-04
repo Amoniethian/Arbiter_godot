@@ -5,85 +5,50 @@
         "id": "intro_01",
         "background": "res://assets/images/backgrounds/story_01.png",
         "voice": "res://assets/audio/voice/story_01.ogg",
-        "text": "The night my daughter disappeared, the world turned to ash.",
-        "text_zh": "女儿失踪的那个夜晚，世界化为了灰烬。"
+        "text": "She fell for a long time.\nLong enough to feel like eternity. Long enough to forget almost everything.\nThe world of the living grew distant. The demon at the end of her chains could no longer scream.\n\"Give her back to me.\"",
+        "text_zh": "她坠落了很长时间。\n长到像是永恒。长到几乎忘记了一切。\n活人的世界越来越远。她锁链尽头的恶魔已经无法尖叫。\n"把她还给我。""
       },
       {
         "id": "intro_02",
         "background": "res://assets/images/backgrounds/story_02.png",
         "voice": "res://assets/audio/voice/story_02.ogg",
-        "text": "They said it was an accident. A fire. No survivors.",
-        "text_zh": "他们说那是一场意外。一场火灾。无人生还。"
+        "text": "There were no last words.\nNot even a goodbye.\nShe chased the shadow that laughed above her daughter's coffin, all the way into a place that should not exist.",
+        "text_zh": "没有遗言。\n甚至没有道别。\n她追逐着在女儿棺材上方大笑的暗影，一直追到了一个不应存在的地方。"
       },
       {
         "id": "intro_03",
         "background": "res://assets/images/backgrounds/story_03.png",
         "voice": "res://assets/audio/voice/story_03.ogg",
-        "text": "But I knew the truth. I saw them - the shadows with burning eyes.",
-        "text_zh": "但我知道真相。我看见了它们——那些眼中燃烧着火焰的暗影。"
+        "text": "The Lord of Hell bent down from the horizon.\n\"A living mortal, trespassing upon Our domain. And she has caught one of Our little pets.\"\n\"We admire thy ability. We admire thy foolishness even more.\"\n\"But thou dost not know, perhaps, that Hell hath its own laws.\"",
+        "text_zh": "地狱之主从地平线上俯身。\n"一个活着的凡人，擅闯吾之领域。她还抓住了吾的一只小宠物。"\n"吾欣赏汝的能力。更欣赏汝的愚蠢。"\n"但汝或许不知，地狱有其自己的法则。""
       },
       {
         "id": "intro_04",
         "background": "res://assets/images/backgrounds/story_04.png",
         "voice": "res://assets/audio/voice/story_04.ogg",
-        "text": "Demons. They took her soul to Hell.",
-        "text_zh": "恶魔。它们把她的灵魂带去了地狱。"
+        "text": "\"No soul that enters this place shall ever depart. They shall suffer here in eternal torment, until time itself doth end.\"\n\"This is not a rule We have made. It was written by something far older than We.\"\n\"We are merely the executor. A jailer, condemned to walk forever alongside the prisoners.\"",
+        "text_zh": ""任何进入此地的灵魂都无法离去。他们将在这里承受永恒的折磨，直到时间本身终结。"\n"这不是吾定下的规则。它由比吾更古老的存在所书写。"\n"吾只是执行者。一个狱卒，被判与囚徒永远同行。""
       },
       {
         "id": "intro_05",
         "background": "res://assets/images/backgrounds/story_05.png",
         "voice": "res://assets/audio/voice/story_05.ogg",
-        "text": "I searched for years. Studied forbidden texts. Made terrible bargains.",
-        "text_zh": "我寻找了很多年。研读禁忌典籍。做出可怕的交易。"
+        "text": "\"Here are nine souls, lingering between life and death. Six are sinners. Three are innocent.\"\n\"Find the righteous. Let them live. Succeed, and We shall release them unto Heaven. Thou mayest also take thy daughter's soul.\"\n\"Fail, and the innocent shall remain in Hell alongside the guilty.\"\n\"As shall thou. As shall thy daughter.\"",
+        "text_zh": ""这里有九个灵魂，徘徊在生死之间。六个是罪人。三个是无辜的。"\n"找出义人。让他们活着。成功了，吾便释放他们升入天堂。汝也可以带走汝女儿的灵魂。"\n"失败了，无辜者将与罪人一同留在地狱。"\n"汝也是。汝的女儿也是。""
       },
       {
         "id": "intro_06",
         "background": "res://assets/images/backgrounds/story_06.png",
         "voice": "res://assets/audio/voice/story_06.ogg",
-        "text": "Until finally, I found a way. A door to the underworld.",
-        "text_zh": "直到最终，我找到了方法。一扇通往冥界的门。"
+        "text": "\"We have placed upon them masks of virtue and vice. The masks shall make them appear as something they may or may not be. Some sinners wear the face of saints. Some innocents wear the visage of demons.\"\n\"As for the sinners—shouldst thou slay the innocent beside thee, We shall grant thee immunity. Thou shalt remain in Hell forever, but thou shalt be spared the punishment.\"\n\"Amuse Us. Do not bore Us.\"",
+        "text_zh": ""吾在他们脸上戴了善与恶的面具。面具会让他们看起来像是他们可能是、也可能不是的样子。有些罪人戴着圣人的面孔。有些无辜者戴着恶魔的面容。"\n"至于罪人——若汝杀死身边的无辜者，吾便赐予汝豁免。汝将永远留在地狱，但汝将免受惩罚。"\n"取悦吾。不要让吾感到无聊。""
       },
       {
         "id": "intro_07",
         "background": "res://assets/images/backgrounds/story_07.png",
         "voice": "res://assets/audio/voice/story_07.ogg",
-        "text": "Lucifer himself awaited me. He offered a deal.",
-        "text_zh": "路西法本人在等着我。他提出了一个交易。"
-      },
-      {
-        "id": "intro_08",
-        "background": "res://assets/images/backgrounds/story_08.png",
-        "voice": "res://assets/audio/voice/story_08.ogg",
-        "text": "\"Find the demon who took your daughter. Prove your worth as an Arbiter.\"",
-        "text_zh": ""找到带走你女儿的恶魔。证明你作为仲裁者的价值。""
-      },
-      {
-        "id": "intro_09",
-        "background": "res://assets/images/backgrounds/story_09.png",
-        "voice": "res://assets/audio/voice/story_09.ogg",
-        "text": "\"Judge the souls of the damned. If all the good survive... she goes free.\"",
-        "text_zh": ""审判那些被诅咒的灵魂。如果所有善良的灵魂都能存活...她就自由了。""
-      },
-      {
-        "id": "intro_10",
-        "background": "res://assets/images/backgrounds/story_10.png",
-        "voice": "res://assets/audio/voice/story_10.ogg",
-        "text": "I accepted. What choice did I have?",
-        "text_zh": "我接受了。我还有什么选择呢？"
-      },
-      {
-        "id": "intro_11",
-        "background": "res://assets/images/backgrounds/story_11.png",
-        "voice": "res://assets/audio/voice/story_11.ogg",
-        "text": "Now I descend into Hell. To become the Arbiter.",
-        "text_zh": "现在我将降入地狱。成为仲裁者。"
-      },
-      {
-        "id": "intro_12",
-        "background": "res://assets/images/backgrounds/story_12.png",
-        "voice": "res://assets/audio/voice/story_12.ogg",
-        "text": "To bring my daughter home.",
-        "text_zh": "为了把我的女儿带回家。"
+        "text": "Six sinners. Three innocents.\nBeneath the masks, truth lies buried.\nLet the judgment begin.",
+        "text_zh": "六个罪人。三个无辜者。\n面具之下，真相被埋藏。\n让审判开始吧。"
       }
     ]
   },
