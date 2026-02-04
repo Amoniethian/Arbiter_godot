@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=3 uid="uid://grid_cell"]
+
+[ext_resource type="Script" path="res://scripts/ui/grid_cell.gd" id="1_cell"]
+
+[node name="GridCell" type="Control"]
+custom_minimum_size = Vector2(200, 280)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_cell")
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CharacterSprite" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DeathOverlay" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3, 0.3, 0.3, 0.7)
+
+[node name="FireEffect" type="CPUParticles2D" parent="."]
+visible = false
+position = Vector2(100, 200)
+emitting = false
+amount = 30
+lifetime = 0.8
+local_coords = false
+emission_shape = 3
+emission_rect_extents = Vector2(80, 10)
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, -100)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+scale_amount_min = 3.0
+scale_amount_max = 8.0
+color = Color(1, 0.3, 0, 1)
+
+[node name="HighlightBorder" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ClickArea" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true

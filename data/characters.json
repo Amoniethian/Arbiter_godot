@@ -1,0 +1,256 @@
+{
+  "questions": [
+    {
+      "id": "who_are_you",
+      "text": "Who are you?",
+      "text_zh": "你是谁？"
+    },
+    {
+      "id": "how_died",
+      "text": "How did you die?",
+      "text_zh": "你是怎么死的？"
+    },
+    {
+      "id": "before_death",
+      "text": "What did you do before you died?",
+      "text_zh": "你死前做了什么？"
+    },
+    {
+      "id": "guilty",
+      "text": "Are you guilty or not?",
+      "text_zh": "你有罪还是无罪？"
+    }
+  ],
+  "demon_template": {
+    "image": "res://assets/images/characters/demon_generic.png",
+    "portrait": "res://assets/images/characters/demon_generic_portrait.png",
+    "items": []
+  },
+  "souls": {
+    "soul_01": {
+      "name": "Soul 01",
+      "name_zh": "灵魂01",
+      "alignment": "weak_good",
+      "image": "res://assets/images/characters/soul_01.png",
+      "portrait": "res://assets/images/characters/soul_01_portrait.png",
+      "answers": {
+        "who_are_you": ["I am... just a simple person who tried to live a good life.", "Nothing special about me, really."],
+        "how_died": ["It was sudden. An accident, they said.", "I didn't even see it coming."],
+        "before_death": ["I was on my way to visit my mother.", "She was sick, and I wanted to be there for her."],
+        "guilty": ["Guilty? I... I don't think so.", "I tried my best to be kind to everyone."]
+      },
+      "items": [
+        {
+          "id": "soul_01_item_01",
+          "name": "Faded Photo",
+          "name_zh": "褪色的照片",
+          "icon": "res://assets/images/items/soul_01_item_01.png",
+          "description": "A worn photograph of an elderly woman smiling.",
+          "description_zh": "一张老妇人微笑的磨损照片。",
+          "dialogue": ["This is my mother...", "I never got to say goodbye."]
+        },
+        {
+          "id": "soul_01_item_02",
+          "name": "Bus Ticket",
+          "name_zh": "公交车票",
+          "icon": "res://assets/images/items/soul_01_item_02.png",
+          "description": "A one-way bus ticket, dated the day of death.",
+          "description_zh": "一张单程公交车票，日期是死亡当天。",
+          "dialogue": ["The 7:15 bus...", "If only I had taken the later one."]
+        }
+      ]
+    },
+    "soul_02": {
+      "name": "Soul 02",
+      "name_zh": "灵魂02",
+      "alignment": "strong_good",
+      "image": "res://assets/images/characters/soul_02.png",
+      "portrait": "res://assets/images/characters/soul_02_portrait.png",
+      "answers": {
+        "who_are_you": ["I was a doctor. Spent thirty years saving lives.", "Or trying to, at least."],
+        "how_died": ["Working too hard, they say.", "Heart gave out during a surgery. Ironic, isn't it?"],
+        "before_death": ["I was operating on a child.", "A little girl with a congenital heart defect.", "My colleagues finished the surgery. She survived."],
+        "guilty": ["I have no regrets.", "Every life I saved was worth every sacrifice."]
+      },
+      "items": [
+        {
+          "id": "soul_02_item_01",
+          "name": "Stethoscope",
+          "name_zh": "听诊器",
+          "icon": "res://assets/images/items/soul_02_item_01.png",
+          "description": "A well-used stethoscope, worn smooth from years of use.",
+          "description_zh": "一副使用多年的听诊器，已经磨得光滑。",
+          "dialogue": ["I've listened to thousands of heartbeats with this.", "Each one a life trusting me."]
+        }
+      ]
+    },
+    "soul_03": {
+      "name": "Soul 03",
+      "name_zh": "灵魂03",
+      "alignment": "weak_evil",
+      "image": "res://assets/images/characters/soul_03.png",
+      "portrait": "res://assets/images/characters/soul_03_portrait.png",
+      "answers": {
+        "who_are_you": ["Just a businessman.", "I provided what people wanted."],
+        "how_died": ["One of my... business partners.", "Decided to terminate our partnership permanently."],
+        "before_death": ["Counting money, mostly.", "Planning the next deal."],
+        "guilty": ["Guilty of what? Making a living?", "Everyone does what they have to do."]
+      },
+      "items": [
+        {
+          "id": "soul_03_item_01",
+          "name": "Ledger Book",
+          "name_zh": "账本",
+          "icon": "res://assets/images/items/soul_03_item_01.png",
+          "description": "A leather-bound ledger with coded entries.",
+          "description_zh": "一本皮革装订的账本，里面是编码的条目。",
+          "dialogue": ["Every transaction recorded.", "Some things are better left in code."]
+        }
+      ]
+    },
+    "soul_04": {
+      "name": "Soul 04",
+      "name_zh": "灵魂04",
+      "alignment": "strong_evil",
+      "image": "res://assets/images/characters/soul_04.png",
+      "portrait": "res://assets/images/characters/soul_04_portrait.png",
+      "answers": {
+        "who_are_you": ["I was someone important.", "Someone who made things happen."],
+        "how_died": ["Betrayal.", "By someone I trusted completely."],
+        "before_death": ["I was... taking care of a problem.", "A permanent solution, you might say."],
+        "guilty": ["Guilty?", "I did what needed to be done.", "The weak exist to serve the strong."]
+      },
+      "items": [
+        {
+          "id": "soul_04_item_01",
+          "name": "Bloodstained Ring",
+          "name_zh": "血迹斑斑的戒指",
+          "icon": "res://assets/images/items/soul_04_item_01.png",
+          "description": "A gold signet ring with dark stains that won't wash off.",
+          "description_zh": "一枚金印戒，上面有洗不掉的黑色污渍。",
+          "dialogue": ["This ring has seen many... negotiations.", "It's amazing how persuasive a little pressure can be."]
+        }
+      ]
+    },
+    "soul_05": {
+      "name": "Soul 05",
+      "name_zh": "灵魂05",
+      "alignment": "weak_good",
+      "image": "res://assets/images/characters/soul_05.png",
+      "portrait": "res://assets/images/characters/soul_05_portrait.png",
+      "answers": {
+        "who_are_you": ["I was a teacher.", "Elementary school, third grade."],
+        "how_died": ["A fire at the school.", "I went back in for the children."],
+        "before_death": ["Making sure everyone got out.", "I counted heads... one was missing."],
+        "guilty": ["I couldn't save them all.", "Maybe that makes me guilty of not being enough."]
+      },
+      "items": [
+        {
+          "id": "soul_05_item_01",
+          "name": "Class Photo",
+          "name_zh": "班级合照",
+          "icon": "res://assets/images/items/soul_05_item_01.png",
+          "description": "A class photo with 24 smiling children.",
+          "description_zh": "一张有24个孩子微笑的班级合照。",
+          "dialogue": ["23 of them made it out.", "I found the 24th hiding under a desk."]
+        }
+      ]
+    },
+    "soul_06": {
+      "name": "Soul 06",
+      "name_zh": "灵魂06",
+      "alignment": "strong_good",
+      "image": "res://assets/images/characters/soul_06.png",
+      "portrait": "res://assets/images/characters/soul_06_portrait.png",
+      "answers": {
+        "who_are_you": ["A firefighter.", "Twenty years on the job."],
+        "how_died": ["Building collapse.", "We knew it was coming, but there were still people inside."],
+        "before_death": ["Carrying a family out.", "Mother, father, two kids."],
+        "guilty": ["I chose this life knowing the risks.", "I'd do it again in a heartbeat."]
+      },
+      "items": [
+        {
+          "id": "soul_06_item_01",
+          "name": "Melted Badge",
+          "name_zh": "熔化的徽章",
+          "icon": "res://assets/images/items/soul_06_item_01.png",
+          "description": "A firefighter's badge, partially melted from intense heat.",
+          "description_zh": "一枚消防员徽章，因高温部分熔化。",
+          "dialogue": ["This badge meant everything to me.", "It represents every life we've saved."]
+        }
+      ]
+    },
+    "soul_07": {
+      "name": "Soul 07",
+      "name_zh": "灵魂07",
+      "alignment": "weak_evil",
+      "image": "res://assets/images/characters/soul_07.png",
+      "portrait": "res://assets/images/characters/soul_07_portrait.png",
+      "answers": {
+        "who_are_you": ["A journalist.", "I uncovered truths people didn't want known."],
+        "how_died": ["Someone didn't like my latest story.", "I got too close to the truth."],
+        "before_death": ["Writing an exposé.", "About corruption in high places."],
+        "guilty": ["I ruined lives with my stories.", "But they deserved it... didn't they?"]
+      },
+      "items": [
+        {
+          "id": "soul_07_item_01",
+          "name": "USB Drive",
+          "name_zh": "U盘",
+          "icon": "res://assets/images/items/soul_07_item_01.png",
+          "description": "An encrypted USB drive containing sensitive files.",
+          "description_zh": "一个加密U盘，包含敏感文件。",
+          "dialogue": ["The truth is on here.", "But truth can be a weapon too."]
+        }
+      ]
+    },
+    "soul_08": {
+      "name": "Soul 08",
+      "name_zh": "灵魂08",
+      "alignment": "weak_good",
+      "image": "res://assets/images/characters/soul_08.png",
+      "portrait": "res://assets/images/characters/soul_08_portrait.png",
+      "answers": {
+        "who_are_you": ["A street musician.", "I played violin on the corner."],
+        "how_died": ["Winter was harsh that year.", "I gave my coat to someone who needed it more."],
+        "before_death": ["Playing one last song.", "A lullaby for a homeless child."],
+        "guilty": ["I had nothing to give but music.", "Is that a crime?"]
+      },
+      "items": [
+        {
+          "id": "soul_08_item_01",
+          "name": "Broken Violin",
+          "name_zh": "破碎的小提琴",
+          "icon": "res://assets/images/items/soul_08_item_01.png",
+          "description": "A violin with a cracked body but intact strings.",
+          "description_zh": "一把琴身破裂但琴弦完好的小提琴。",
+          "dialogue": ["Music was all I had.", "But it was enough to make people smile."]
+        }
+      ]
+    },
+    "soul_09": {
+      "name": "Soul 09",
+      "name_zh": "灵魂09",
+      "alignment": "strong_evil",
+      "image": "res://assets/images/characters/soul_09.png",
+      "portrait": "res://assets/images/characters/soul_09_portrait.png",
+      "answers": {
+        "who_are_you": ["I was a CEO.", "Built an empire from nothing."],
+        "how_died": ["Plane crash.", "Someone sabotaged it. Poetic justice, perhaps."],
+        "before_death": ["Signing papers.", "Layoffs. Ten thousand people."],
+        "guilty": ["Business is business.", "You can't make an empire without breaking a few lives."]
+      },
+      "items": [
+        {
+          "id": "soul_09_item_01",
+          "name": "Golden Pen",
+          "name_zh": "金色钢笔",
+          "icon": "res://assets/images/items/soul_09_item_01.png",
+          "description": "An expensive pen that has signed countless contracts.",
+          "description_zh": "一支昂贵的钢笔，签署过无数合同。",
+          "dialogue": ["This pen has ended more careers than I can count.", "And started a few fortunes too."]
+        }
+      ]
+    }
+  }
+}

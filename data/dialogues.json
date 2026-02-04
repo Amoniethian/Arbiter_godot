@@ -1,0 +1,160 @@
+{
+  "lucifer_dialogues": {
+    "lucifer_intro": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "Ah... another soul seeks my domain."},
+        {"speaker": "Lucifer", "text": "I know why you've come."},
+        {"speaker": "Lucifer", "text": "Your daughter... taken by one of my demons."},
+        {"speaker": "Lucifer", "text": "Find the guilty one, and perhaps... I'll return her."},
+        {"speaker": "Lucifer", "text": "But be warned - demons are masters of deception."},
+        {"speaker": "Lucifer", "text": "Some speak only truth. Others, only lies."},
+        {"speaker": "Lucifer", "text": "Place the culprit in the center of my circle."},
+        {"speaker": "Lucifer", "text": "Then... we shall weigh their soul."}
+      ]
+    },
+    "lucifer_level_01_intro": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "The First Circle."},
+        {"speaker": "Lucifer", "text": "Nine demons stand before you."},
+        {"speaker": "Lucifer", "text": "One took your daughter. Find them."},
+        {"speaker": "Lucifer", "text": "Ask your questions. Examine their belongings."},
+        {"speaker": "Lucifer", "text": "Truth-tellers cannot lie. Liars cannot tell truth."},
+        {"speaker": "Lucifer", "text": "Drag the guilty one to the center."}
+      ]
+    },
+    "lucifer_level_01_success": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "Impressive."},
+        {"speaker": "Lucifer", "text": "You've found the first culprit."},
+        {"speaker": "Lucifer", "text": "But this was merely the beginning."},
+        {"speaker": "Lucifer", "text": "Deeper circles await..."}
+      ]
+    },
+    "lucifer_level_01_failure": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "Wrong."},
+        {"speaker": "Lucifer", "text": "That demon is innocent."},
+        {"speaker": "Lucifer", "text": "Your daughter remains in darkness."},
+        {"speaker": "Lucifer", "text": "Try again."}
+      ]
+    },
+    "lucifer_level_02_intro": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "The Second Circle."},
+        {"speaker": "Lucifer", "text": "These demons are more cunning."},
+        {"speaker": "Lucifer", "text": "Think carefully before you judge."}
+      ]
+    },
+    "lucifer_level_02_success": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "Your mind is sharper than I expected."},
+        {"speaker": "Lucifer", "text": "Continue..."}
+      ]
+    },
+    "lucifer_level_02_failure": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "Failure."},
+        {"speaker": "Lucifer", "text": "The guilty one laughs at your mistake."}
+      ]
+    },
+    "lucifer_level_03_intro": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "The Third Circle."},
+        {"speaker": "Lucifer", "text": "You're getting closer to your daughter."},
+        {"speaker": "Lucifer", "text": "But the demons here are craftier still."}
+      ]
+    },
+    "lucifer_level_03_success": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "Well done."},
+        {"speaker": "Lucifer", "text": "One more circle of demons remains."}
+      ]
+    },
+    "lucifer_level_03_failure": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "So close, yet so wrong."},
+        {"speaker": "Lucifer", "text": "Think again."}
+      ]
+    },
+    "lucifer_level_04_intro": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "The Fourth Circle."},
+        {"speaker": "Lucifer", "text": "The final demon trial."},
+        {"speaker": "Lucifer", "text": "Succeed here, and you'll face the ultimate test."}
+      ]
+    },
+    "lucifer_level_04_success": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "You've proven yourself against my demons."},
+        {"speaker": "Lucifer", "text": "But now... a different challenge awaits."},
+        {"speaker": "Lucifer", "text": "Human souls. Mortals who lived, loved, and sinned."},
+        {"speaker": "Lucifer", "text": "Can you judge them fairly?"}
+      ]
+    },
+    "lucifer_level_04_failure": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "So close to the end, and yet you stumble."},
+        {"speaker": "Lucifer", "text": "Try again."}
+      ]
+    },
+    "lucifer_final_intro": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "The Final Judgment."},
+        {"speaker": "Lucifer", "text": "Nine souls stand before you."},
+        {"speaker": "Lucifer", "text": "Some are good. Some are evil."},
+        {"speaker": "Lucifer", "text": "The weak and strong of each."},
+        {"speaker": "Lucifer", "text": "Adjacent souls influence each other."},
+        {"speaker": "Lucifer", "text": "The weak evil will destroy the weak good."},
+        {"speaker": "Lucifer", "text": "The strong evil will destroy both."},
+        {"speaker": "Lucifer", "text": "But the strong good... resists the weak evil."},
+        {"speaker": "Lucifer", "text": "Arrange them so that ALL good souls survive."},
+        {"speaker": "Lucifer", "text": "Only then will I release your daughter."}
+      ]
+    },
+    "lucifer_final_success": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "..."},
+        {"speaker": "Lucifer", "text": "You've done it."},
+        {"speaker": "Lucifer", "text": "Every good soul survives."},
+        {"speaker": "Lucifer", "text": "A deal is a deal."},
+        {"speaker": "Lucifer", "text": "Your daughter is free."},
+        {"speaker": "Lucifer", "text": "But remember this moment."},
+        {"speaker": "Lucifer", "text": "You've proven that even in Hell..."},
+        {"speaker": "Lucifer", "text": "Justice can prevail."},
+        {"speaker": "Lucifer", "text": "Until we meet again, Arbiter."}
+      ]
+    },
+    "lucifer_final_failure": {
+      "portrait": "res://assets/images/characters/lucifer_portrait.png",
+      "lines": [
+        {"speaker": "Lucifer", "text": "The flames have claimed another good soul."},
+        {"speaker": "Lucifer", "text": "Your daughter weeps in the darkness."},
+        {"speaker": "Lucifer", "text": "Try again, mortal."}
+      ]
+    }
+  },
+  "eye_tracker_intro": {
+    "portrait": "res://assets/images/characters/lucifer_portrait.png",
+    "show_eyes_after": true,
+    "lines": [
+      {"speaker": "Lucifer", "text": "Before we begin..."},
+      {"speaker": "Lucifer", "text": "I must see your soul."},
+      {"speaker": "Lucifer", "text": "Look into my eyes..."}
+    ]
+  }
+}

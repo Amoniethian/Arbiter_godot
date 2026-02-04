@@ -1,0 +1,195 @@
+[gd_scene load_steps=3 format=3 uid="uid://level_scene"]
+
+[ext_resource type="Script" path="res://scripts/level.gd" id="1_level"]
+[ext_resource type="PackedScene" uid="uid://grid_cell" path="res://scenes/ui/grid_cell.tscn" id="2_cell"]
+
+[node name="Level" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_level")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BackgroundColor" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6, 0, 0, 1)
+
+[node name="LuciferArea" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 400.0
+offset_bottom = 600.0
+
+[node name="LuciferImage" type="TextureRect" parent="LuciferArea"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="GridContainer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -330.0
+offset_top = -450.0
+offset_right = 330.0
+offset_bottom = 450.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RightPanel" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -300.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = 600.0
+grow_horizontal = 0
+theme_override_constants/separation = 20
+
+[node name="ScaleIcon" type="TextureRect" parent="RightPanel"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ScalePlaceholder" type="Panel" parent="RightPanel/ScaleIcon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScaleLabel" type="Label" parent="RightPanel/ScaleIcon/ScalePlaceholder"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -15.0
+offset_right = 40.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "SCALE"
+horizontal_alignment = 1
+
+[node name="ScaleDisplay" type="HBoxContainer" parent="RightPanel"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 20
+
+[node name="GoodIndicator" type="Panel" parent="RightPanel/ScaleDisplay"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="EvilIndicator" type="Panel" parent="RightPanel/ScaleDisplay"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="WeighButton" type="Button" parent="RightPanel"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "WEIGH SOULS"
+
+[node name="ReturnButton" type="Button" parent="RightPanel"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 16
+text = "Return"
+
+[node name="DialogOverlay" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResultOverlay" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResultBG" type="ColorRect" parent="ResultOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.8)
+
+[node name="ResultText" type="Label" parent="ResultOverlay"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -50.0
+offset_right = 200.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 36
+text = "SUCCESS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContinueButton" type="Button" parent="ResultOverlay"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 80.0
+offset_right = 100.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Continue"

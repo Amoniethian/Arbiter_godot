@@ -1,0 +1,197 @@
+[gd_scene load_steps=2 format=3 uid="uid://character_detail"]
+
+[ext_resource type="Script" path="res://scripts/character_detail.gd" id="1_detail"]
+
+[node name="CharacterDetail" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_detail")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="LeftPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 450.0
+offset_bottom = 1080.0
+
+[node name="SkeletonDecor" type="TextureRect" parent="LeftPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="QuestionContainer" type="VBoxContainer" parent="LeftPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -150.0
+offset_right = 140.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="ReturnButton" type="Button" parent="LeftPanel"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 85.0
+offset_top = 30.0
+offset_right = 365.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 24
+text = "Return"
+
+[node name="CenterPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 450.0
+offset_right = 900.0
+offset_bottom = 1080.0
+
+[node name="RedBG" type="ColorRect" parent="CenterPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_bottom = 1080.0
+grow_horizontal = 0
+color = Color(0.8, 0, 0, 1)
+
+[node name="CharacterImage" type="TextureRect" parent="CenterPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -350.0
+offset_right = 180.0
+offset_bottom = 350.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RightPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -570.0
+offset_bottom = 1080.0
+grow_horizontal = 0
+
+[node name="ItemGrid" type="GridContainer" parent="RightPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -200.0
+offset_right = 160.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 2
+
+[node name="DialogContainer" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -250.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="DialogBG" type="Panel" parent="DialogContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 20.0
+offset_right = -50.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CharacterPortrait" type="TextureRect" parent="DialogContainer"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 100.0
+offset_top = -200.0
+offset_right = 400.0
+offset_bottom = 200.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SpeakerName" type="Label" parent="DialogContainer"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 80.0
+offset_top = 30.0
+offset_right = 400.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 28
+text = "Character Name:"
+
+[node name="DialogText" type="RichTextLabel" parent="DialogContainer"]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 80.0
+offset_top = 80.0
+offset_right = 1840.0
+offset_bottom = 200.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+scroll_active = false
+
+[node name="ContinueIndicator" type="Label" parent="DialogContainer"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -40.0
+offset_right = -60.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "▼"
+
+[node name="TypewriterTimer" type="Timer" parent="."]
+wait_time = 0.05

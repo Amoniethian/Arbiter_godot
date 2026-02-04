@@ -1,0 +1,156 @@
+{
+  "intro_story": {
+    "segments": [
+      {
+        "id": "intro_01",
+        "background": "res://assets/images/backgrounds/story_01.png",
+        "voice": "res://assets/audio/voice/story_01.ogg",
+        "text": "The night my daughter disappeared, the world turned to ash.",
+        "text_zh": "女儿失踪的那个夜晚，世界化为了灰烬。"
+      },
+      {
+        "id": "intro_02",
+        "background": "res://assets/images/backgrounds/story_02.png",
+        "voice": "res://assets/audio/voice/story_02.ogg",
+        "text": "They said it was an accident. A fire. No survivors.",
+        "text_zh": "他们说那是一场意外。一场火灾。无人生还。"
+      },
+      {
+        "id": "intro_03",
+        "background": "res://assets/images/backgrounds/story_03.png",
+        "voice": "res://assets/audio/voice/story_03.ogg",
+        "text": "But I knew the truth. I saw them - the shadows with burning eyes.",
+        "text_zh": "但我知道真相。我看见了它们——那些眼中燃烧着火焰的暗影。"
+      },
+      {
+        "id": "intro_04",
+        "background": "res://assets/images/backgrounds/story_04.png",
+        "voice": "res://assets/audio/voice/story_04.ogg",
+        "text": "Demons. They took her soul to Hell.",
+        "text_zh": "恶魔。它们把她的灵魂带去了地狱。"
+      },
+      {
+        "id": "intro_05",
+        "background": "res://assets/images/backgrounds/story_05.png",
+        "voice": "res://assets/audio/voice/story_05.ogg",
+        "text": "I searched for years. Studied forbidden texts. Made terrible bargains.",
+        "text_zh": "我寻找了很多年。研读禁忌典籍。做出可怕的交易。"
+      },
+      {
+        "id": "intro_06",
+        "background": "res://assets/images/backgrounds/story_06.png",
+        "voice": "res://assets/audio/voice/story_06.ogg",
+        "text": "Until finally, I found a way. A door to the underworld.",
+        "text_zh": "直到最终，我找到了方法。一扇通往冥界的门。"
+      },
+      {
+        "id": "intro_07",
+        "background": "res://assets/images/backgrounds/story_07.png",
+        "voice": "res://assets/audio/voice/story_07.ogg",
+        "text": "Lucifer himself awaited me. He offered a deal.",
+        "text_zh": "路西法本人在等着我。他提出了一个交易。"
+      },
+      {
+        "id": "intro_08",
+        "background": "res://assets/images/backgrounds/story_08.png",
+        "voice": "res://assets/audio/voice/story_08.ogg",
+        "text": "\"Find the demon who took your daughter. Prove your worth as an Arbiter.\"",
+        "text_zh": ""找到带走你女儿的恶魔。证明你作为仲裁者的价值。""
+      },
+      {
+        "id": "intro_09",
+        "background": "res://assets/images/backgrounds/story_09.png",
+        "voice": "res://assets/audio/voice/story_09.ogg",
+        "text": "\"Judge the souls of the damned. If all the good survive... she goes free.\"",
+        "text_zh": ""审判那些被诅咒的灵魂。如果所有善良的灵魂都能存活...她就自由了。""
+      },
+      {
+        "id": "intro_10",
+        "background": "res://assets/images/backgrounds/story_10.png",
+        "voice": "res://assets/audio/voice/story_10.ogg",
+        "text": "I accepted. What choice did I have?",
+        "text_zh": "我接受了。我还有什么选择呢？"
+      },
+      {
+        "id": "intro_11",
+        "background": "res://assets/images/backgrounds/story_11.png",
+        "voice": "res://assets/audio/voice/story_11.ogg",
+        "text": "Now I descend into Hell. To become the Arbiter.",
+        "text_zh": "现在我将降入地狱。成为仲裁者。"
+      },
+      {
+        "id": "intro_12",
+        "background": "res://assets/images/backgrounds/story_12.png",
+        "voice": "res://assets/audio/voice/story_12.ogg",
+        "text": "To bring my daughter home.",
+        "text_zh": "为了把我的女儿带回家。"
+      }
+    ]
+  },
+  "ending_story": {
+    "good_ending": {
+      "segments": [
+        {
+          "id": "good_01",
+          "background": "res://assets/images/backgrounds/ending_good_01.png",
+          "voice": "res://assets/audio/voice/ending_good_01.ogg",
+          "text": "The gates of Hell opened before me.",
+          "text_zh": "地狱之门在我面前打开。"
+        },
+        {
+          "id": "good_02",
+          "background": "res://assets/images/backgrounds/ending_good_02.png",
+          "voice": "res://assets/audio/voice/ending_good_02.ogg",
+          "text": "And there she was. My daughter. Waiting.",
+          "text_zh": "她就在那里。我的女儿。在等待。"
+        },
+        {
+          "id": "good_03",
+          "background": "res://assets/images/backgrounds/ending_good_03.png",
+          "voice": "res://assets/audio/voice/ending_good_03.ogg",
+          "text": "We walked out of the darkness together.",
+          "text_zh": "我们一起走出了黑暗。"
+        },
+        {
+          "id": "good_04",
+          "background": "res://assets/images/backgrounds/ending_good_04.png",
+          "voice": "res://assets/audio/voice/ending_good_04.ogg",
+          "text": "Back to the light. Back home.",
+          "text_zh": "回到光明中。回到家。"
+        }
+      ]
+    },
+    "bad_ending": {
+      "segments": [
+        {
+          "id": "bad_01",
+          "background": "res://assets/images/backgrounds/ending_bad_01.png",
+          "voice": "res://assets/audio/voice/ending_bad_01.ogg",
+          "text": "I failed. The good souls perished in flames.",
+          "text_zh": "我失败了。善良的灵魂在火焰中消逝。"
+        },
+        {
+          "id": "bad_02",
+          "background": "res://assets/images/backgrounds/ending_bad_02.png",
+          "voice": "res://assets/audio/voice/ending_bad_02.ogg",
+          "text": "Lucifer's laughter echoed through eternity.",
+          "text_zh": "路西法的笑声在永恒中回荡。"
+        },
+        {
+          "id": "bad_03",
+          "background": "res://assets/images/backgrounds/ending_bad_03.png",
+          "voice": "res://assets/audio/voice/ending_bad_03.ogg",
+          "text": "My daughter remains trapped. Forever.",
+          "text_zh": "我的女儿永远被困在那里。"
+        },
+        {
+          "id": "bad_04",
+          "background": "res://assets/images/backgrounds/ending_bad_04.png",
+          "voice": "res://assets/audio/voice/ending_bad_04.ogg",
+          "text": "And I... I stay to try again.",
+          "text_zh": "而我...我留下来，再次尝试。"
+        }
+      ]
+    }
+  }
+}

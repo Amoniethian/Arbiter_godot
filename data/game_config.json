@@ -1,0 +1,39 @@
+{
+  "game_settings": {
+    "typewriter_speed": 0.05,
+    "dialog_continue_delay": 0.5,
+    "scale_animation_duration": 2.0,
+    "death_effect_duration": 1.5,
+    "default_language": "en"
+  },
+  "ui_settings": {
+    "grid_cell_size": [200, 280],
+    "grid_spacing": 20,
+    "grid_position": [960, 400],
+    "dialog_box_size": [1200, 200],
+    "dialog_box_position": [960, 900],
+    "character_detail_size": [1920, 1080],
+    "question_button_size": [280, 60],
+    "item_slot_size": [100, 100],
+    "item_grid_columns": 2,
+    "scale_icon_position": [1700, 300],
+    "weigh_button_position": [1700, 500]
+  },
+  "colors": {
+    "good_color": "#FFFFFF",
+    "evil_color": "#000000",
+    "truth_color": "#FFFFFF",
+    "lie_color": "#000000",
+    "fire_color": "#FF4444",
+    "dialog_bg": "#1A1A1A",
+    "dialog_border": "#FF0000",
+    "button_normal": "#333333",
+    "button_hover": "#555555",
+    "button_pressed": "#222222"
+  },
+  "audio_volumes": {
+    "bgm": -10,
+    "sfx": 0,
+    "voice": 0
+  }
+}

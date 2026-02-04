@@ -1,0 +1,148 @@
+{
+  "levels": [
+    {
+      "id": "demon_01",
+      "name": "First Circle",
+      "type": "demon",
+      "description": "Find the demon who took your daughter",
+      "background": "res://assets/images/backgrounds/level_demon_01_bg.png",
+      "bgm": "res://assets/audio/bgm/demon_level.ogg",
+      "target_position": 4,
+      "victory_condition": "place_target_center",
+      "characters": [
+        {"id": "demon_01_1", "type": "truth_demon", "is_target": false},
+        {"id": "demon_01_2", "type": "truth_demon", "is_target": false},
+        {"id": "demon_01_3", "type": "lie_demon", "is_target": false},
+        {"id": "demon_01_4", "type": "truth_demon", "is_target": false},
+        {"id": "demon_01_5", "type": "lie_demon", "is_target": true},
+        {"id": "demon_01_6", "type": "truth_demon", "is_target": false},
+        {"id": "demon_01_7", "type": "lie_demon", "is_target": false},
+        {"id": "demon_01_8", "type": "truth_demon", "is_target": false},
+        {"id": "demon_01_9", "type": "lie_demon", "is_target": false}
+      ],
+      "intro_dialogue": "lucifer_level_01_intro",
+      "success_dialogue": "lucifer_level_01_success",
+      "failure_dialogue": "lucifer_level_01_failure"
+    },
+    {
+      "id": "demon_02",
+      "name": "Second Circle",
+      "type": "demon",
+      "description": "The demons grow more cunning",
+      "background": "res://assets/images/backgrounds/level_demon_02_bg.png",
+      "bgm": "res://assets/audio/bgm/demon_level.ogg",
+      "target_position": 4,
+      "victory_condition": "place_target_center",
+      "characters": [
+        {"id": "demon_02_1", "type": "lie_demon", "is_target": false},
+        {"id": "demon_02_2", "type": "truth_demon", "is_target": false},
+        {"id": "demon_02_3", "type": "lie_demon", "is_target": false},
+        {"id": "demon_02_4", "type": "lie_demon", "is_target": true},
+        {"id": "demon_02_5", "type": "truth_demon", "is_target": false},
+        {"id": "demon_02_6", "type": "lie_demon", "is_target": false},
+        {"id": "demon_02_7", "type": "truth_demon", "is_target": false},
+        {"id": "demon_02_8", "type": "lie_demon", "is_target": false},
+        {"id": "demon_02_9", "type": "truth_demon", "is_target": false}
+      ],
+      "intro_dialogue": "lucifer_level_02_intro",
+      "success_dialogue": "lucifer_level_02_success",
+      "failure_dialogue": "lucifer_level_02_failure"
+    },
+    {
+      "id": "demon_03",
+      "name": "Third Circle",
+      "type": "demon",
+      "description": "Deeper into the abyss",
+      "background": "res://assets/images/backgrounds/level_demon_03_bg.png",
+      "bgm": "res://assets/audio/bgm/demon_level.ogg",
+      "target_position": 4,
+      "victory_condition": "place_target_center",
+      "characters": [
+        {"id": "demon_03_1", "type": "truth_demon", "is_target": false},
+        {"id": "demon_03_2", "type": "lie_demon", "is_target": false},
+        {"id": "demon_03_3", "type": "truth_demon", "is_target": true},
+        {"id": "demon_03_4", "type": "lie_demon", "is_target": false},
+        {"id": "demon_03_5", "type": "lie_demon", "is_target": false},
+        {"id": "demon_03_6", "type": "truth_demon", "is_target": false},
+        {"id": "demon_03_7", "type": "lie_demon", "is_target": false},
+        {"id": "demon_03_8", "type": "truth_demon", "is_target": false},
+        {"id": "demon_03_9", "type": "lie_demon", "is_target": false}
+      ],
+      "intro_dialogue": "lucifer_level_03_intro",
+      "success_dialogue": "lucifer_level_03_success",
+      "failure_dialogue": "lucifer_level_03_failure"
+    },
+    {
+      "id": "demon_04",
+      "name": "Fourth Circle",
+      "type": "demon",
+      "description": "The final demon trial",
+      "background": "res://assets/images/backgrounds/level_demon_04_bg.png",
+      "bgm": "res://assets/audio/bgm/demon_level.ogg",
+      "target_position": 4,
+      "victory_condition": "place_target_center",
+      "characters": [
+        {"id": "demon_04_1", "type": "lie_demon", "is_target": false},
+        {"id": "demon_04_2", "type": "lie_demon", "is_target": false},
+        {"id": "demon_04_3", "type": "truth_demon", "is_target": false},
+        {"id": "demon_04_4", "type": "truth_demon", "is_target": false},
+        {"id": "demon_04_5", "type": "lie_demon", "is_target": false},
+        {"id": "demon_04_6", "type": "lie_demon", "is_target": true},
+        {"id": "demon_04_7", "type": "truth_demon", "is_target": false},
+        {"id": "demon_04_8", "type": "lie_demon", "is_target": false},
+        {"id": "demon_04_9", "type": "truth_demon", "is_target": false}
+      ],
+      "intro_dialogue": "lucifer_level_04_intro",
+      "success_dialogue": "lucifer_level_04_success",
+      "failure_dialogue": "lucifer_level_04_failure"
+    },
+    {
+      "id": "souls_final",
+      "name": "The Final Judgment",
+      "type": "souls",
+      "description": "Judge the souls - let all good souls survive",
+      "background": "res://assets/images/backgrounds/level_souls_bg.png",
+      "bgm": "res://assets/audio/bgm/souls_level.ogg",
+      "target_position": -1,
+      "victory_condition": "all_good_survive",
+      "characters": [
+        {"id": "soul_01", "alignment": "weak_good"},
+        {"id": "soul_02", "alignment": "strong_good"},
+        {"id": "soul_03", "alignment": "weak_evil"},
+        {"id": "soul_04", "alignment": "strong_evil"},
+        {"id": "soul_05", "alignment": "weak_good"},
+        {"id": "soul_06", "alignment": "strong_good"},
+        {"id": "soul_07", "alignment": "weak_evil"},
+        {"id": "soul_08", "alignment": "weak_good"},
+        {"id": "soul_09", "alignment": "strong_evil"}
+      ],
+      "intro_dialogue": "lucifer_final_intro",
+      "success_dialogue": "lucifer_final_success",
+      "failure_dialogue": "lucifer_final_failure"
+    }
+  ],
+  "adjacency_rules": {
+    "comment": "Grid positions: 0-8 (3x3), only orthogonal adjacency (no diagonals)",
+    "adjacent_pairs": [
+      [0, 1], [1, 2],
+      [3, 4], [4, 5],
+      [6, 7], [7, 8],
+      [0, 3], [3, 6],
+      [1, 4], [4, 7],
+      [2, 5], [5, 8]
+    ]
+  },
+  "kill_rules": {
+    "comment": "Who kills whom when adjacent",
+    "rules": [
+      {"attacker": "weak_evil", "victim": "weak_good", "result": "kill"},
+      {"attacker": "strong_evil", "victim": "weak_good", "result": "kill"},
+      {"attacker": "strong_evil", "victim": "strong_good", "result": "kill"},
+      {"attacker": "weak_evil", "victim": "strong_good", "result": "no_effect"},
+      {"attacker": "weak_evil", "victim": "weak_evil", "result": "no_effect"},
+      {"attacker": "weak_evil", "victim": "strong_evil", "result": "no_effect"},
+      {"attacker": "strong_evil", "victim": "weak_evil", "result": "no_effect"},
+      {"attacker": "strong_evil", "victim": "strong_evil", "result": "no_effect"}
+    ]
+  }
+}
