@@ -258,18 +258,25 @@ func _on_drag_started(cell: GridCell) -> void:
 
 
 ## Handle drag ended / 处理拖拽结束
-func _on_drag_ended(source_cell: GridCell, target_cell: GridCell) -> void:
+func _on_drag_ended(source_cell: GridCell, _target_cell: GridCell) -> void:
 	# Hide highlights
 	for c in grid_cells:
 		c.show_highlight(false)
 
+	# Find target cell at current mouse position (ignore passed target, it's always null)
+	# 在当前鼠标位置查找目标格子（忽略传入的target，它总是null）
+	var target_cell = get_cell_at_position(get_global_mouse_position())
+
+	# Always reset visual position first / 先重置视觉位置
+	source_cell.reset_position()
+
 	if target_cell and target_cell != source_cell and not target_cell.is_dead:
-		# Swap characters
+		# Swap characters in GameManager / 在GameManager中交换角色
 		GameManager.swap_characters(source_cell.grid_position, target_cell.grid_position)
+		# Refresh grid to show swapped characters / 刷新网格显示交换后的角色
 		_refresh_grid()
-	else:
-		# Reset position
-		source_cell.reset_position()
+		# Play swap sound / 播放交换音效
+		AudioManager.play_click()
 
 	dragging_cell = null
 
