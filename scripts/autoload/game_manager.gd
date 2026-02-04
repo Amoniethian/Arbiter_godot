@@ -41,6 +41,9 @@ var current_level_data: Dictionary = {}
 ## Player has seen intro / 玩家已看过开场
 var has_seen_intro: bool = false
 
+## Cheat mode for testing - highlights target demons in yellow / 测试用作弊模式 - 用黄色高亮目标恶魔
+var cheat_mode: bool = true
+
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -120,6 +123,18 @@ func kill_character(character_id: String) -> void:
 ## Check if character is dead / 检查角色是否死亡
 func is_character_dead(character_id: String) -> bool:
 	return character_id in dead_characters
+
+
+## Check if character is the target demon (for cheat mode) / 检查角色是否是目标恶魔（作弊模式用）
+func is_target_demon(character_id: String) -> bool:
+	if current_level_data.get("type", "") != "demon":
+		return false
+
+	for char_data in current_level_data.get("characters", []):
+		if char_data["id"] == character_id:
+			return char_data.get("is_target", false)
+
+	return false
 
 
 ## Execute judgment for demon levels / 执行恶魔关卡的判定

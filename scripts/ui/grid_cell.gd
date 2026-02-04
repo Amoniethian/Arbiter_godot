@@ -100,18 +100,26 @@ func _load_character_image() -> void:
 ## Create placeholder texture / 创建占位符纹理
 func _create_placeholder_texture() -> void:
 	var img = Image.create(180, 260, false, Image.FORMAT_RGBA8)
-	img.fill(Color(0.3, 0.2, 0.2, 1))
+
+	# Check if this is the target demon in cheat mode / 检查作弊模式下是否是目标恶魔
+	var is_target = GameManager.cheat_mode and GameManager.is_target_demon(character_id)
+
+	# Use bright yellow for target demon, normal dark for others / 目标恶魔用明黄色，其他用暗色
+	var bg_color = Color(1.0, 0.9, 0.0, 1) if is_target else Color(0.3, 0.2, 0.2, 1)
+	var silhouette_color = Color(0.8, 0.6, 0.0, 1) if is_target else Color(0.5, 0.4, 0.4, 1)
+
+	img.fill(bg_color)
 
 	# Draw simple silhouette
 	for y in range(40, 100):
 		for x in range(70, 110):
 			var dist = Vector2(x - 90, y - 70).length()
 			if dist < 30:
-				img.set_pixel(x, y, Color(0.5, 0.4, 0.4, 1))
+				img.set_pixel(x, y, silhouette_color)
 
 	for y in range(100, 240):
 		for x in range(50, 130):
-			img.set_pixel(x, y, Color(0.5, 0.4, 0.4, 1))
+			img.set_pixel(x, y, silhouette_color)
 
 	var tex = ImageTexture.create_from_image(img)
 	character_sprite.texture = tex
